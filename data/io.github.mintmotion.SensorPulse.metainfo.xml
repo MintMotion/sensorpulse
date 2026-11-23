@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.mintmotion.SensorPulse</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>SensorPulse</name>
+  <summary>Temperatures, fans and alarms at a glance</summary>
+  <summary xml:lang="es">Temperaturas, ventiladores y alarmas de un vistazo</summary>
+  <summary xml:lang="fr">Températures, ventilateurs et alarmes en un coup d'œil</summary>
+  <summary xml:lang="it">Temperature, ventole e allarmi a colpo d'occhio</summary>
+  <summary xml:lang="de">Temperaturen, Lüfter und Alarme auf einen Blick</summary>
+  <summary xml:lang="pt">Temperaturas, ventoinhas e alarmes num relance</summary>
+  <summary xml:lang="ja">温度・ファン・アラームをひと目で</summary>
+  <summary xml:lang="zh">温度、风扇和警报一目了然</summary>
+  <description>
+    <p>Sensor monitor for Debian, Ubuntu, Linux Mint and derivatives, on any desktop.
+    Shows CPU, GPU, disks, fans and battery in the panel, in a window or floating on the
+    desktop, with colors that change as temperatures rise and visual and sound alarms.</p>
+    <p xml:lang="es">Monitor de sensores para Debian, Ubuntu, Linux Mint y derivadas, en cualquier
+    escritorio. Muestra CPU, GPU, discos, ventiladores y batería en el panel, en una ventana o
+    flotando en el escritorio, con colores que cambian al subir la temperatura y alarmas
+    visuales y sonoras.</p>
+    <p>Alarms understand your processor: they know its design limit, warn when it slows down
+    because of heat, when it gets hot while doing almost nothing or when a fan stops.</p>
+    <p xml:lang="es">Las alarmas entienden tu procesador: conocen su límite de diseño y avisan si
+    baja la velocidad por calor, si se calienta sin estar trabajando o si se para un ventilador.</p>
+    <p>It only reads sensors and never wakes up a sleeping dedicated graphics card.</p>
+  </description>
+  <launchable type="desktop-id">sensorpulse.desktop</launchable>
+  <url type="homepage">https://github.com/MintMotion/sensorpulse</url>
+  <url type="bugtracker">https://github.com/MintMotion/sensorpulse/issues</url>
+  <url type="vcs-browser">https://github.com/MintMotion/sensorpulse</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Window, floating widget and panel during a critical alarm</caption>
+      <caption xml:lang="es">Ventana, widget flotante y panel durante una alarma crítica</caption>
+      <image>https://raw.githubusercontent.com/MintMotion/sensorpulse/main/docs/captura-alarma.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Choosing a style in the welcome assistant</caption>
+      <caption xml:lang="es">Elegir estilo en el asistente de bienvenida</caption>
+      <image>https://raw.githubusercontent.com/MintMotion/sensorpulse/main/docs/captura-asistente-estilos.png</image>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#a5f3fc</color>
+    <color type="primary" scheme_preference="dark">#0e4f5c</color>
+  </branding>
+  <developer id="io.github.mintmotion"><name>José Antonio Ramos Miralles «Sombra»</name></developer>
+  <categories><category>System</category><category>Monitor</category></categories>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.3.8" date="2026-11-23">
+      <description>
+        <p>Fixes the Cinnamon panel applet, which failed to load.</p>
+      </description>
+    </release>
+    <release version="0.3.7" date="2026-11-22">
+      <description>
+        <p>Gauges in the panel and up to 8 values, choosing which ones are shown in the bar and
+        which only on click, names of your own for sensors, more alarm sounds (with a play
+        button), disk intervals by disk type, Italian, German and Portuguese, and about ten
+        times less CPU for the floating widget.</p>
+      </description>
+    </release>
+    <release version="0.3.6" date="2026-11-22">
+      <description>
+        <p>Fixes 42 bugs: readings and alarms no longer freeze when the system clock jumps, a hung
+        notification daemon no longer blocks the service, and the window, panel and applets detect
+        a frozen service reliably.</p>
+      </description>
+    </release>
+    <release version="0.3.5" date="2026-11-21">
+      <description>
+        <p>Reliability and security release: monitoring can no longer stop silently, damaged
+        settings are never overwritten, alarms cannot be muted indefinitely by other programs,
+        panels show "no data" when the service is not running, and the sensor detection helper
+        is much more careful on laptops.</p>
+      </description>
+    </release>
+    <release version="0.3.4" date="2026-11-21">
+      <description>
+        <p>Works with Python 3.8 and 3.9, fixes a leak when the window is opened and closed,
+        sensor order, Budgie detection and a floating widget that could not be unlocked.</p>
+      </description>
+    </release>
+    <release version="0.3.3" date="2026-11-19">
+      <description>
+        <p>Fixes a false critical alarm on Ryzen with an offset control temperature, alarms
+        that never cleared and disk reads while scanning for sensors.</p>
+      </description>
+    </release>
+    <release version="0.3.2" date="2026-11-19">
+      <description>
+        <p>Sensor names in the panel; automatic restart after an upgrade.</p>
+      </description>
+    </release>
+    <release version="0.3.1" date="2026-11-19">
+      <description>
+        <p>Full AMD TjMax table from the official amd.com specifications (747 models), with
+        priority over the per-family rules.</p>
+      </description>
+    </release>
+    <release version="0.3.0" date="2026-11-19">
+      <description>
+        <p>Fixes settings that were not saved, uninstalling, false critical alarms on Ryzen
+        laptops and extra disk reads. New Cockpit and OLED styles, Bento window, exact CPU limits
+        per AMD model, alarms by sustained throttling and a shared display logic for the panel,
+        Cinnamon applet and desklet and the GNOME extension.</p>
+      </description>
+    </release>
+    <release version="0.2.0" date="2026-11-19">
+      <description><p>Smart alarms, 30-day history, sensor detection and GNOME extension.</p></description>
+    </release>
+    <release version="0.1.0" date="2026-11-18">
+      <description><p>First version.</p></description>
+    </release>
+  </releases>
+</component>

@@ -1,0 +1,33 @@
+name: Un sensor sale mal o no aparece / Wrong or missing sensor
+description: Una temperatura, un ventilador o un disco no se detecta o muestra un valor incorrecto / A temperature, fan or disk isn't detected or shows a wrong value
+labels: [hardware]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SensorPulse se ha probado en pocos equipos reales. Cada informe ayuda a que funcione en más hardware.
+
+        SensorPulse has been tested on few real computers. Every report helps it work on more hardware.
+
+        Puedes escribir en español o en inglés. / You can write in Spanish or English.
+  - type: input
+    id: sensor
+    attributes:
+      label: Sensor / Sensor
+      placeholder: "Por ejemplo / For example: CPU, Fan 2, NVMe"
+    validations:
+      required: true
+  - type: textarea
+    id: dato
+    attributes:
+      label: Qué sale y qué debería salir / What is shown and what should be shown
+      description: Si `sensors` (lm-sensors) u otro programa muestra el dato bien, pega lo que muestra. / If `sensors` (lm-sensors) or another program shows the value correctly, paste what it shows.
+    validations:
+      required: true
+  - type: textarea
+    id: informe
+    attributes:
+      label: Informe de SensorPulse (sensorpulse report) / SensorPulse report
+      render: markdown
+    validations:
+      required: true

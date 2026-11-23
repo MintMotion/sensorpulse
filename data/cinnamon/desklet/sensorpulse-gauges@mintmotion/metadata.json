@@ -1,0 +1,9 @@
+{
+    "uuid": "sensorpulse-gauges@mintmotion",
+    "name": "SensorPulse gauges",
+    "description": "Futuristic sensor gauges on the desktop with alarm colors (needs the SensorPulse program)",
+    "icon": "sensorpulse",
+    "max-instances": 3,
+    "version": "0.3.8",
+    "author": "SensorPulse"
+}

@@ -1,0 +1,1165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sensorpulse\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%(name)s has dropped to %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr "%(name)s ha bajado a %(value)s%(unit)s (límite %(limit)s%(unit)s)."
+
+msgid "%(name)s has reached %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr "%(name)s ha llegado a %(value)s%(unit)s (límite %(limit)s%(unit)s)."
+
+msgid "%(name)s has stopped while %(ref)s is at %(value).0f%(unit)s."
+msgstr "%(name)s se ha parado con %(ref)s a %(value).0f%(unit)s."
+
+msgid "%(name)s is at %(value).0f%(unit)s while the computer is almost idle (%(load).0f%% load). Make sure the air vents are not blocked."
+msgstr "%(name)s está a %(value).0f%(unit)s con el equipo casi sin trabajar (%(load).0f%% de carga). Comprueba que las rejillas de ventilación no estén tapadas."
+
+msgid "%(name)s is at its limit (%(value).0f%(unit)s) and has to slow down a lot to protect itself. Make sure the air vents are not blocked and the fans are working."
+msgstr "%(name)s está en su límite (%(value).0f%(unit)s) y tiene que bajar mucho la velocidad para protegerse. Comprueba que las rejillas de ventilación no estén tapadas y que los ventiladores funcionen."
+
+msgid "%(name)s is back to %(value)s%(unit)s."
+msgstr "%(name)s ha vuelto a %(value)s%(unit)s."
+
+msgid "%(name)s is reducing its speed to protect itself from heat (%(value).0f%(unit)s)."
+msgstr "%(name)s está bajando su velocidad para protegerse del calor (%(value).0f%(unit)s)."
+
+msgid "%d custom alarm rule(s) were invalid and have been ignored."
+msgstr "%d regla(s) de alarma personalizada no eran válidas y se han ignorado."
+
+msgid "%d min"
+msgstr "%d min"
+
+msgid "%s cannot be read (check its permissions). The last good copy or the defaults are being used, and the file will not be overwritten."
+msgstr "No se puede leer %s (revisa sus permisos). Se usa la última copia buena o los valores por defecto, y el fichero no se sobrescribirá."
+
+msgid "%s could not be uninstalled. Another program may be installing updates: try again in a few minutes."
+msgstr "No se ha podido desinstalar %s. Puede que otro programa esté instalando actualizaciones: vuelve a intentarlo en unos minutos."
+
+msgid "%s settings"
+msgstr "Ajustes de %s"
+
+msgid "--days must be between 0 and 3650"
+msgstr "--days debe estar entre 0 y 3650"
+
+msgid "0 RPM at start: maybe nothing connected"
+msgstr "0 RPM al arrancar: quizá no hay nada conectado"
+
+msgid "1 hour"
+msgstr "1 hora"
+
+msgid "10 min"
+msgstr "10 min"
+
+msgid "24 hours"
+msgstr "24 horas"
+
+msgid "30 days"
+msgstr "30 días"
+
+msgid "7 days"
+msgstr "7 días"
+
+msgid "A long interval lets the disk rest (spin down), but a disk could heat up between two readings without the alarm going off. A short interval watches it closely, but on many disks each reading stops them from going to sleep."
+msgstr "Un intervalo largo deja descansar al disco (que se pare), pero podría calentarse entre dos lecturas sin que salte la alarma. Un intervalo corto lo vigila de cerca, pero en muchos discos cada lectura les impide dormirse."
+
+msgid "A sign that the air vents may be blocked or the cooling is not working well."
+msgstr "Es señal de que las rejillas de ventilación pueden estar tapadas o de que la refrigeración no funciona bien."
+
+msgid "A very soft glow whose color follows the state of your computer."
+msgstr "Un brillo muy suave cuyo color sigue el estado de tu equipo."
+
+msgid "A warm disk is working, so reading it more often does not take away its rest. With the disk service (UDisks2), a disk that is asleep is not woken up to read it."
+msgstr "Un disco templado está trabajando, así que leerlo más a menudo no le quita descanso. Con el servicio de discos (UDisks2), un disco dormido no se despierta para leerlo."
+
+msgid "ACPI zone"
+msgstr "Zona ACPI"
+
+msgid "ACPI zone %s"
+msgstr "Zona ACPI %s"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Accent color"
+msgstr "Color de acento"
+
+msgid "Activates the motherboard and disk sensors that are not loaded. Your password will be asked once."
+msgstr "Activa los sensores de placa base y de discos que no estén cargados. Se pedirá tu contraseña una vez."
+
+msgid "Add or hide sensors"
+msgstr "Añadir u ocultar sensores"
+
+msgid "Alarm"
+msgstr "Alarma"
+
+msgid "Alarm clock"
+msgstr "Despertador"
+
+msgid "Alarm sound"
+msgstr "Sonido de alarma"
+
+msgid "Alarms"
+msgstr "Alarmas"
+
+msgid "Alarms for this sensor…"
+msgstr "Alarmas de este sensor…"
+
+msgid "All good"
+msgstr "Todo bien"
+
+msgid "All set"
+msgstr "Todo listo"
+
+msgid "Also delete my settings and alarms"
+msgstr "Borrar también mis ajustes y alarmas"
+
+msgid "Also warn when something is hot (not only critical)"
+msgstr "Avisar también cuando algo esté caliente (no solo crítico)"
+
+msgid "Always on top"
+msgstr "Siempre encima"
+
+msgid "Animate fan icons"
+msgstr "Animar los iconos de ventilador"
+
+msgid "Anonymous summary of your sensors to paste in a forum or a bug report. It does not include your name, computer name or serial numbers."
+msgstr "Resumen anónimo de tus sensores para pegarlo en un foro o en un informe de fallo. No incluye tu nombre, el nombre del equipo ni números de serie."
+
+msgid "Appearance"
+msgstr "Apariencia"
+
+msgid "Assistant"
+msgstr "Asistente"
+
+msgid "Attention"
+msgstr "Atención"
+
+msgid "Attention!"
+msgstr "¡Atención!"
+
+msgid "Aurora background"
+msgstr "Fondo Aurora"
+
+msgid "Automatic"
+msgstr "Automático"
+
+msgid "Automatic (CPU)"
+msgstr "Automática (CPU)"
+
+msgid "Automatic alarms"
+msgstr "Alarmas automáticas"
+
+msgid "Avoids false alarms from short peaks."
+msgstr "Evita falsas alarmas por picos cortos."
+
+msgid "Back"
+msgstr "Atrás"
+
+msgid "Back to normal"
+msgstr "Todo vuelve a la normalidad"
+
+msgid "Back to recommended"
+msgstr "Volver a lo recomendado"
+
+msgid "Bars"
+msgstr "Barras"
+
+msgid "Battery"
+msgstr "Batería"
+
+msgid "Bell"
+msgstr "Campana"
+
+msgid "Bento (one large card)"
+msgstr "Bento (una tarjeta grande)"
+
+msgid "Blink when an alarm is active"
+msgstr "Parpadear mientras haya una alarma"
+
+msgid "Busiest cores"
+msgstr "Núcleos más ocupados"
+
+msgid "CCD %s"
+msgstr "CCD %s"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU (control)"
+msgstr "CPU (control)"
+
+msgid "CPU clock"
+msgstr "Frecuencia de la CPU"
+
+msgid "CPU die"
+msgstr "CPU (núcleo)"
+
+msgid "CPU load"
+msgstr "Uso de la CPU"
+
+msgid "CPU package"
+msgstr "CPU (encapsulado)"
+
+msgid "CRITICAL"
+msgstr "CRÍTICO"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Cards with all your sensors, always at hand"
+msgstr "Tarjetas con todos tus sensores, siempre a mano"
+
+msgid "Charge"
+msgstr "Carga"
+
+msgid "Charge cycles"
+msgstr "Ciclos de carga"
+
+msgid "Chart of %(name)s: min %(min)s, max %(max)s, now %(now)s"
+msgstr "Gráfica de %(name)s: mínimo %(min)s, máximo %(max)s, ahora %(now)s"
+
+msgid "Chime"
+msgstr "Campanilla"
+
+msgid "Choose a style"
+msgstr "Elige un estilo"
+
+msgid "Choose what is shown and where. Double-click a name to rename it."
+msgstr "Elige qué se muestra y dónde. Haz doble clic en un nombre para cambiarlo."
+
+msgid "Classic (all the same size)"
+msgstr "Clásica (todas iguales)"
+
+msgid "Click for details"
+msgstr "Pulsa para ver el detalle"
+
+msgid "Click-through when locked"
+msgstr "Dejar pasar los clics cuando está bloqueado"
+
+msgid "Clock %s"
+msgstr "Reloj %s"
+
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Cockpit"
+msgstr "Cabina"
+
+msgid "Color and blinking"
+msgstr "Color y parpadeo"
+
+msgid "Color-blind friendly colors"
+msgstr "Colores aptos para daltonismo"
+
+msgid "Cooling problem"
+msgstr "Problema de refrigeración"
+
+msgid "Copied to the clipboard."
+msgstr "Copiado al portapapeles."
+
+msgid "Copy hardware report"
+msgstr "Copiar informe del equipo"
+
+msgid "Core %s"
+msgstr "Núcleo %s"
+
+msgid "Core sensor %s"
+msgstr "Sensor de núcleo %s"
+
+msgid "Critical"
+msgstr "Crítico"
+
+msgid "Critical (always interrupts)"
+msgstr "Crítica (avisa siempre)"
+
+msgid "Critical alarms. ▶ plays it."
+msgstr "Alarmas críticas. ▶ lo reproduce."
+
+msgid "Dark"
+msgstr "Oscuro"
+
+msgid "Deep dark"
+msgstr "Oscuro profundo"
+
+msgid "Degrees it must drop before alarming again"
+msgstr "Grados que debe bajar antes de volver a avisar"
+
+msgid "Desktop notification"
+msgstr "Notificación en el escritorio"
+
+msgid "Desktop notifications"
+msgstr "Notificaciones en el escritorio"
+
+msgid "Details"
+msgstr "Detalles"
+
+msgid "Detect sensors…"
+msgstr "Detectar sensores…"
+
+msgid "Digital beeps"
+msgstr "Pitidos digitales"
+
+msgid "Disk"
+msgstr "Disco"
+
+msgid "Disk of unknown type (treated as a hard disk)"
+msgstr "Disco de tipo desconocido (se trata como un disco duro)"
+
+msgid "Disk temperature"
+msgstr "Temperatura de los discos"
+
+msgid "Disks"
+msgstr "Discos"
+
+msgid "Drag to move · right-click for options"
+msgstr "Arrastra para mover · clic derecho para opciones"
+
+msgid "Error tone"
+msgstr "Tono de error"
+
+msgid "Export history"
+msgstr "Exportar historial"
+
+msgid "Export…"
+msgstr "Exportar…"
+
+msgid "Fan %s"
+msgstr "Ventilador %s"
+
+msgid "Fan stopped"
+msgstr "Ventilador parado"
+
+msgid "Fans"
+msgstr "Ventiladores"
+
+msgid "Finish"
+msgstr "Terminar"
+
+msgid "Floating"
+msgstr "Flotante"
+
+msgid "Floating on the desktop"
+msgstr "Flotando en el escritorio"
+
+msgid "Floating widget style"
+msgstr "Estilo del widget flotante"
+
+msgid "For at least (seconds)"
+msgstr "Durante al menos (segundos)"
+
+msgid "Futuristic HUD"
+msgstr "HUD futurista"
+
+msgid "GNOME needs the “AppIndicator” extension to show icons in the top bar (Ubuntu already includes it)."
+msgstr "GNOME necesita la extensión «AppIndicator» para mostrar iconos en la barra superior (Ubuntu ya la trae)."
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU %s"
+msgstr "GPU %s"
+
+msgid "GPU NVIDIA"
+msgstr "GPU NVIDIA"
+
+msgid "GPU fan"
+msgstr "Ventilador de la GPU"
+
+msgid "GPU hotspot"
+msgstr "GPU (punto más caliente)"
+
+msgid "GPU load"
+msgstr "Uso de la GPU"
+
+msgid "GPU memory"
+msgstr "Memoria de la GPU"
+
+msgid "GPU power"
+msgstr "Consumo de la GPU"
+
+msgid "GPU sensor %s"
+msgstr "Sensor de GPU %s"
+
+msgid "Gauges (like the desktop widget)"
+msgstr "Indicadores (como el widget de escritorio)"
+
+msgid "General"
+msgstr "General"
+
+msgid "Give it a name of your own, for example «Motherboard» or «Exhaust fan». Leave it empty to use the original name."
+msgstr "Ponle un nombre propio, por ejemplo «Placa base» o «Ventilador de extracción». Déjalo vacío para usar el nombre original."
+
+msgid "Glass"
+msgstr "Cristal"
+
+msgid "Got it"
+msgstr "Entendido"
+
+msgid "HOT"
+msgstr "ALTO"
+
+msgid "Hard disk"
+msgstr "Disco duro"
+
+msgid "Hard disk reading interval"
+msgstr "Cada cuánto leer los discos duros"
+
+msgid "Health"
+msgstr "Salud"
+
+msgid "Hide floating widget"
+msgstr "Ocultar el widget flotante"
+
+msgid "High"
+msgstr "Alto"
+
+msgid "History is not being saved"
+msgstr "No se está guardando el historial"
+
+msgid "History of a sensor (CSV by default)."
+msgstr "Historial de un sensor (CSV por defecto)."
+
+msgid "I have found %d new sensors. Which ones do you want to see?"
+msgstr "He encontrado %d sensores nuevos. ¿Cuáles quieres ver?"
+
+msgid "If you choose more sensors for the panel, the rest appear when you click it. Choose which ones in «Sensors»."
+msgstr "Si eliges más sensores para el panel, el resto aparece al hacer clic en él. Elige cuáles en «Sensores»."
+
+msgid "In a window"
+msgstr "En una ventana"
+
+msgid "In the panel"
+msgstr "En el panel"
+
+msgid "Information"
+msgstr "Información"
+
+msgid "Internal error; monitoring continues."
+msgstr "Error interno; la monitorización continúa."
+
+msgid "It only reads sensors: it never changes fans or hardware settings."
+msgstr "Solo lee sensores: nunca cambia ventiladores ni ajustes del hardware."
+
+msgid "JSON output instead of CSV"
+msgstr "salida en JSON en lugar de CSV"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Large"
+msgstr "Grande"
+
+msgid "Large card"
+msgstr "Tarjeta grande"
+
+msgid "Last reading %d s ago"
+msgstr "Último dato hace %d s"
+
+msgid "Let's get your sensor monitor ready in one minute. Nothing needs to be configured by hand."
+msgstr "Vamos a dejar tu monitor de sensores listo en un minuto. No hay que configurar nada a mano."
+
+msgid "Level"
+msgstr "Nivel"
+
+msgid "License: %s · Free and open source software"
+msgstr "Licencia: %s · Software libre y de código abierto"
+
+msgid "Light"
+msgstr "Claro"
+
+msgid "Listen"
+msgstr "Escuchar"
+
+msgid "Live preview with your real data. Values move smoothly and change color as temperatures rise."
+msgstr "Vista previa en vivo con tus datos reales. Los valores se mueven con suavidad y cambian de color cuando sube la temperatura."
+
+msgid "Lock position"
+msgstr "Bloquear posición"
+
+msgid "Locked"
+msgstr "Bloqueado"
+
+msgid "Look"
+msgstr "Aspecto"
+
+msgid "Measured every 30 s to save battery"
+msgstr "Se mide cada 30 s para ahorrar batería"
+
+msgid "Medium"
+msgstr "Mediano"
+
+msgid "Memory"
+msgstr "Memoria"
+
+msgid "Message"
+msgstr "Mensaje"
+
+msgid "Minimal"
+msgstr "Minimal"
+
+msgid "More values"
+msgstr "Más valores"
+
+msgid "Motherboard"
+msgstr "Placa base"
+
+msgid "Mute 1 hour"
+msgstr "Silenciar 1 hora"
+
+msgid "Mute alarms"
+msgstr "Silenciar alarmas"
+
+msgid "Mute alarms for 1 hour"
+msgstr "Silenciar alarmas 1 hora"
+
+msgid "Mute for 1 hour"
+msgstr "Silenciar 1 hora"
+
+msgid "Mute for 15 minutes"
+msgstr "Silenciar 15 minutos"
+
+msgid "Mute until tomorrow"
+msgstr "Silenciar hasta mañana"
+
+msgid "My alarms"
+msgstr "Mis alarmas"
+
+msgid "NORMAL"
+msgstr "NORMAL"
+
+msgid "NVMe SSD"
+msgstr "SSD NVMe"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Name and number"
+msgstr "Nombre y número"
+
+msgid "Names"
+msgstr "Nombres"
+
+msgid "Needed for alarms to work when the window is closed."
+msgstr "Necesario para que las alarmas funcionen con la ventana cerrada."
+
+msgid "New alarm"
+msgstr "Nueva alarma"
+
+msgid "New sensors"
+msgstr "Sensores nuevos"
+
+msgid "New sensors activated: %s."
+msgstr "Sensores nuevos activados: %s."
+
+msgid "Next"
+msgstr "Siguiente"
+
+msgid "Next to the clock and the other icons"
+msgstr "Junto al reloj y los demás iconos"
+
+msgid "No alarms so far."
+msgstr "Sin alarmas por ahora."
+
+msgid "No disk with a temperature sensor was found."
+msgstr "No se ha encontrado ningún disco con sensor de temperatura."
+
+msgid "No fan speeds found: many laptops do not publish them for Linux. Temperatures will still be monitored."
+msgstr "No se han encontrado velocidades de ventilador: muchos portátiles no las publican para Linux. Las temperaturas se seguirán vigilando."
+
+msgid "No new sensors were found. Everything your computer offers is already being shown."
+msgstr "No se han encontrado sensores nuevos. Ya se muestra todo lo que ofrece tu equipo."
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Not again today"
+msgstr "Hoy no más"
+
+msgid "Note"
+msgstr "Nota"
+
+msgid "Notification"
+msgstr "Notificación"
+
+msgid "Now"
+msgstr "Ahora"
+
+msgid "Nuclear plant alarm"
+msgstr "Alarma de central nuclear"
+
+msgid "OLED minimal"
+msgstr "OLED mínimo"
+
+msgid "On Cinnamon (Wayland) the widget may not stay behind your windows; use “Always on top” or the X11 session if needed."
+msgstr "En Cinnamon (Wayland) el widget puede no quedarse detrás de las ventanas; usa «Siempre encima» o la sesión X11 si hace falta."
+
+msgid "On GNOME (Wayland) the floating widget is shown as a normal window: GNOME does not let apps place widgets on the desktop."
+msgstr "En GNOME (Wayland) el widget flotante se muestra como una ventana normal: GNOME no deja a los programas colocar widgets en el escritorio."
+
+msgid "On click"
+msgstr "Al hacer clic"
+
+msgid "Open window"
+msgstr "Abrir ventana"
+
+msgid "Original name: %s"
+msgstr "Nombre original: %s"
+
+msgid "Panel"
+msgstr "Panel"
+
+msgid "Panel look"
+msgstr "Aspecto del panel"
+
+msgid "Panel: next to the clock. On click: only in the list that opens when you click the panel. Floating: the desktop widget."
+msgstr "Panel: junto al reloj. Al hacer clic: solo en la lista que se abre al pulsar el panel. Flotante: el widget de escritorio."
+
+msgid "Power"
+msgstr "Potencia"
+
+msgid "Power draw"
+msgstr "Consumo"
+
+msgid "Quit"
+msgstr "Salir"
+
+msgid "RAM"
+msgstr "RAM"
+
+msgid "RAM in use"
+msgstr "RAM en uso"
+
+msgid "Read hard disk temperatures"
+msgstr "Leer la temperatura de los discos duros"
+
+msgid "Recent alarms"
+msgstr "Alarmas recientes"
+
+msgid "Recommended limits are read from your hardware. You can add your own alarms (for example, at 75 °C) later in Settings."
+msgstr "Los límites recomendados se leen de tu hardware. Puedes añadir tus propias alarmas (por ejemplo, a 75 °C) más tarde en Ajustes."
+
+msgid "Reconnecting to the sensor service…"
+msgstr "Reconectando con el servicio de sensores…"
+
+msgid "Reducing speed because of heat"
+msgstr "Bajando la velocidad por calor"
+
+msgid "Refresh every (seconds)"
+msgstr "Actualizar cada (segundos)"
+
+msgid "Rename a sensor…"
+msgstr "Cambiar el nombre de un sensor…"
+
+msgid "Rename sensor"
+msgstr "Cambiar el nombre del sensor"
+
+msgid "Rename «%s»…"
+msgstr "Cambiar el nombre de «%s»…"
+
+msgid "Repeat the sound"
+msgstr "Repetir el sonido"
+
+msgid "Repeat the sound every 2 minutes while the alarm lasts"
+msgstr "Repetir el sonido cada 2 minutos mientras dure la alarma"
+
+msgid "Reset min/max"
+msgstr "Reiniciar mín./máx."
+
+msgid "Restart SensorPulse"
+msgstr "Reiniciar SensorPulse"
+
+msgid "Restart the service"
+msgstr "Reiniciar el servicio"
+
+msgid "Resting"
+msgstr "En reposo"
+
+msgid "Resting (not woken up to save power)"
+msgstr "En reposo (no se despierta para ahorrar energía)"
+
+msgid "Resting · measured every 30 s to save battery"
+msgstr "En reposo · se mide cada 30 s para ahorrar batería"
+
+msgid "Ring"
+msgstr "Timbre"
+
+msgid "Rings"
+msgstr "Anillos"
+
+msgid "Run the welcome assistant again"
+msgstr "Repetir el asistente de bienvenida"
+
+msgid "SATA SSD"
+msgstr "SSD SATA"
+
+msgid "SLOWING DOWN"
+msgstr "FRENANDO"
+
+msgid "SSD"
+msgstr "SSD"
+
+msgid "SSD sensor %s"
+msgstr "Sensor del SSD %s"
+
+msgid "Same as the system"
+msgstr "Igual que el sistema"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Save the history of this sensor as CSV or JSON"
+msgstr "Guardar el historial de este sensor en CSV o JSON"
+
+msgid "Search for new sensors"
+msgstr "Buscar sensores nuevos"
+
+msgid "Sensor"
+msgstr "Sensor"
+
+msgid "Sensor monitor for Debian, Ubuntu, Linux Mint and derivatives."
+msgstr "Monitor de sensores para Debian, Ubuntu, Linux Mint y derivadas."
+
+msgid "SensorPulse has been updated."
+msgstr "SensorPulse se ha actualizado."
+
+msgid "Sensors"
+msgstr "Sensores"
+
+msgid "Settings"
+msgstr "Ajustes"
+
+msgid "Settings could not be read"
+msgstr "No se pudieron leer los ajustes"
+
+msgid "Show"
+msgstr "Mostrar"
+
+msgid "Show selected"
+msgstr "Mostrar los marcados"
+
+msgid "Show the names in the panel"
+msgstr "Mostrar los nombres en el panel"
+
+msgid "Show/hide floating widget"
+msgstr "Mostrar/ocultar el widget flotante"
+
+msgid "Shows a test notification and plays the alarm sound."
+msgstr "Muestra una notificación de prueba y reproduce el sonido de alarma."
+
+msgid "Shows the temperatures in the panel and warns you only when it matters. Or press “Start” to choose everything yourself."
+msgstr "Muestra las temperaturas en el panel y te avisa solo cuando importa. O pulsa «Empezar» para elegirlo todo tú."
+
+msgid "Size"
+msgstr "Tamaño"
+
+msgid "Slowing down because of heat"
+msgstr "Bajando velocidad por calor"
+
+msgid "Small"
+msgstr "Pequeño"
+
+msgid "Soft beep"
+msgstr "Pitido suave"
+
+msgid "Soft chime"
+msgstr "Campanilla suave"
+
+msgid "Soft sound for warnings"
+msgstr "Sonido suave para los avisos"
+
+msgid "Some alarm rules were ignored"
+msgstr "Se ignoraron algunas reglas de alarma"
+
+msgid "Something is hot"
+msgstr "Algo está caliente"
+
+msgid "Sonar ping"
+msgstr "Ping de sonar"
+
+msgid "Sound"
+msgstr "Sonido"
+
+msgid "Sound alarm"
+msgstr "Alarma sonora"
+
+msgid "Start"
+msgstr "Empezar"
+
+msgid "Start with the computer"
+msgstr "Arrancar con el equipo"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Style"
+msgstr "Estilo"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "Temperature %s"
+msgstr "Temperatura %s"
+
+msgid "Temperature alarm"
+msgstr "Alarma de temperatura"
+
+msgid "Temperature unit"
+msgstr "Unidad de temperatura"
+
+msgid "Test alarm"
+msgstr "Prueba de alarma"
+
+msgid "The panel shows a few values next to the clock, and clicking it shows the rest. The desktop widget shows larger gauges. On the next pages you choose which sensors go to each place and you can give them names of your own."
+msgstr "El panel muestra unos pocos valores junto al reloj y, al hacer clic, el resto. El widget de escritorio muestra indicadores más grandes. En las páginas siguientes eliges qué sensores van a cada sitio y puedes ponerles nombres propios."
+
+msgid "The program restarts to apply the new language."
+msgstr "El programa se reinicia para aplicar el nuevo idioma."
+
+msgid "The program will be removed. Your password will be requested."
+msgstr "Se quitará el programa. Se te pedirá la contraseña."
+
+msgid "The recommended sensors are already selected. Panel: next to the clock. On click: only in the list that opens when you click the panel. Widget: the floating desktop widget. Type a name of your own if you like (for example «Motherboard» instead of «diode 0»)."
+msgstr "Los sensores recomendados ya están marcados. Panel: junto al reloj. Al hacer clic: solo en la lista que se abre al pulsar el panel. Widget: el widget flotante del escritorio. Escribe un nombre propio si quieres (por ejemplo «Placa base» en vez de «diode 0»)."
+
+msgid "The sensor history could not be written (%s). Alarms keep working."
+msgstr "No se ha podido guardar el historial de sensores (%s). Las alarmas siguen funcionando."
+
+msgid "The sensor service could not be started."
+msgstr "No se ha podido arrancar el servicio de sensores."
+
+msgid "The sensors could not be activated."
+msgstr "No se han podido activar los sensores."
+
+msgid "The settings could not be saved (%s)."
+msgstr "No se han podido guardar los ajustes (%s)."
+
+msgid "The settings file was damaged. It was saved as %s and the last good copy or the defaults are being used."
+msgstr "El archivo de ajustes estaba dañado. Se guardó como %s y se usa la última copia buena o los valores por defecto."
+
+msgid "The system does not include drivers for these sensors (this is normal in virtual machines and some cloud kernels)."
+msgstr "El sistema no incluye controladores para estos sensores (es normal en máquinas virtuales y en algunos kernels para la nube)."
+
+msgid "The values will appear in the top bar. The first time, you may need to log out and back in."
+msgstr "Los valores aparecerán en la barra superior. La primera vez puede que tengas que cerrar la sesión y volver a entrar."
+
+msgid "The volume rises little by little. «Got it» in the notification stops it."
+msgstr "El volumen sube poco a poco. «Entendido» en la notificación lo detiene."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Thermal zone"
+msgstr "Zona térmica"
+
+msgid "They will stay active after restarting."
+msgstr "Seguirán activos al reiniciar."
+
+msgid "This computer does not expose physical sensors (this is normal in virtual machines)."
+msgstr "Este equipo no ofrece sensores físicos (es lo normal en máquinas virtuales)."
+
+msgid "This computer is a laptop. Laptops rarely have motherboard sensors, and testing for them can freeze some models. Try anyway?"
+msgstr "Este equipo es un portátil. Los portátiles casi nunca tienen sensores en la placa y probarlos puede bloquear algunos modelos. ¿Probar de todos modos?"
+
+msgid "This is how an alarm will look and sound."
+msgstr "Así se verá y sonará una alarma."
+
+msgid "This is normal under load"
+msgstr "Esto es normal con carga"
+
+msgid "This is what I found on your computer:"
+msgstr "Esto es lo que he encontrado en tu equipo:"
+
+msgid "This option is not available on this system."
+msgstr "Esta opción no está disponible en este sistema."
+
+msgid "Too hot for the workload"
+msgstr "Demasiado caliente para el trabajo que hace"
+
+msgid "Transparent; place it anywhere with the mouse"
+msgstr "Transparente; colócalo donde quieras con el ratón"
+
+msgid "Try anyway"
+msgstr "Probar de todos modos"
+
+msgid "Turn it off to fit more values in less space."
+msgstr "Desactívalo para que quepan más valores en menos espacio."
+
+msgid "Turn this off if your disks must never be woken up: without the disk service (UDisks2) the program cannot tell whether a disk is asleep."
+msgstr "Desactívalo si tus discos no deben despertarse nunca: sin el servicio de discos (UDisks2) el programa no puede saber si un disco está dormido."
+
+msgid "Two-tone alarm"
+msgstr "Alarma de dos tonos"
+
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+msgid "Uninstall %s?"
+msgstr "¿Desinstalar %s?"
+
+msgid "Uninstall %s…"
+msgstr "Desinstalar %s…"
+
+msgid "Unmute"
+msgstr "Quitar silencio"
+
+msgid "Use recommended settings and finish"
+msgstr "Usar lo recomendado y terminar"
+
+msgid "Use the limits recommended by your hardware."
+msgstr "Usa los límites que recomienda tu hardware."
+
+msgid "Values in the panel"
+msgstr "Valores en el panel"
+
+msgid "Values shown in the panel"
+msgstr "Valores que se ven en el panel"
+
+msgid "Version"
+msgstr "Versión"
+
+msgid "Visual alarm (color and blinking)"
+msgstr "Alarma visual (color y parpadeo)"
+
+msgid "Wait before alarming (seconds)"
+msgstr "Esperar antes de avisar (segundos)"
+
+msgid "Waiting for data…"
+msgstr "Esperando datos…"
+
+msgid "Warn me if something gets too hot"
+msgstr "Avisarme si algo se calienta demasiado"
+
+msgid "Warn when a fan stops"
+msgstr "Avisar si se para un ventilador"
+
+msgid "Warn when it gets hot while almost idle"
+msgstr "Avisar si se calienta sin estar trabajando"
+
+msgid "Warn when the CPU or GPU slows down because of heat"
+msgstr "Avisar si la CPU o la gráfica bajan la velocidad por calor"
+
+msgid "Warning"
+msgstr "Aviso"
+
+msgid "Warning (it waits if you are busy)"
+msgstr "Aviso (espera si estás ocupado)"
+
+msgid "Warning sound"
+msgstr "Sonido de aviso"
+
+msgid "Warnings only show a notification; critical alarms also play the sound. During games or full-screen videos only critical alarms interrupt."
+msgstr "Los avisos solo muestran una notificación; las alarmas críticas también suenan. Durante juegos o vídeos a pantalla completa solo interrumpen las críticas."
+
+msgid "Watch a hard disk every 2 minutes while it is warm"
+msgstr "Vigilar un disco duro cada 2 minutos mientras esté templado"
+
+msgid "Welcome"
+msgstr "Bienvenido"
+
+msgid "Welcome to %s"
+msgstr "Bienvenido a %s"
+
+msgid "What do you want to monitor, and where?"
+msgstr "¿Qué quieres vigilar y dónde?"
+
+msgid "When it"
+msgstr "Cuando"
+
+msgid "Where do you want to see your sensors?"
+msgstr "¿Dónde quieres ver tus sensores?"
+
+msgid "Where to show the sensors"
+msgstr "Dónde mostrar los sensores"
+
+msgid "While you were busy"
+msgstr "Mientras estabas ocupado"
+
+msgid "Widget"
+msgstr "Widget"
+
+msgid "Window layout"
+msgstr "Distribución de la ventana"
+
+msgid "You can choose more than one. You can change this at any time."
+msgstr "Puedes elegir más de una opción. Puedes cambiarlo cuando quieras."
+
+msgid "You have no alarms of your own yet."
+msgstr "Todavía no tienes alarmas propias."
+
+msgid "Your %(model)s is designed to work up to %(tj).0f%(unit)s under load. You will be warned if it goes beyond that, if it slows down because of heat or if it gets hot while doing almost nothing."
+msgstr "Tu %(model)s está diseñado para trabajar hasta %(tj).0f%(unit)s con carga. Te avisaremos si se pasa de ese límite, si baja la velocidad por calor o si se calienta sin estar trabajando."
+
+msgid "Your %(model)s will raise an alarm at %(crit).0f%(unit)s."
+msgstr "Tu %(model)s dará la alarma a %(crit).0f%(unit)s."
+
+msgid "Your desktop has transparency turned off; the widget will have a solid background. You can enable the compositor in your desktop settings."
+msgstr "Tu escritorio tiene la transparencia desactivada; el widget tendrá fondo sólido. Puedes activar el compositor en los ajustes del escritorio."
+
+msgid "Your motherboard reserves its sensor chip for its own use, so it cannot be activated safely."
+msgstr "Tu placa base reserva su chip de sensores para uso propio, así que no se puede activar de forma segura."
+
+msgid "Your sensors are being watched. You will only be warned when it matters."
+msgstr "Tus sensores ya están vigilados. Solo te avisaremos cuando importe."
+
+msgid "above"
+msgstr "por encima de"
+
+msgid "advanced reading"
+msgstr "lectura avanzada"
+
+msgid "alarms muted until %s"
+msgstr "alarmas silenciadas hasta las %s"
+
+msgid "asleep"
+msgstr "en reposo"
+
+msgid "below"
+msgstr "por debajo de"
+
+msgid "clock"
+msgstr "frecuencia"
+
+msgid "collecting data…"
+msgstr "recogiendo datos…"
+
+msgid "color"
+msgstr "color"
+
+msgid "control value with offset (not the real temperature)"
+msgstr "valor de control con desfase (no es la temperatura real)"
+
+msgid "critical"
+msgstr "crítico"
+
+msgid "days back (default 1)"
+msgstr "días hacia atrás (por defecto 1)"
+
+msgid "disk temperature can be enabled later (optional)"
+msgstr "la temperatura del disco se puede activar después (opcional)"
+
+msgid "drops below"
+msgstr "baja de"
+
+msgid "duplicate of the main sensor"
+msgstr "repite el sensor principal"
+
+msgid "every %d h"
+msgstr "cada %d h"
+
+msgid "every %d min"
+msgstr "cada %d min"
+
+msgid "every %d s"
+msgstr "cada %d s"
+
+msgid "every 10 min"
+msgstr "cada 10 min"
+
+msgid "every 15 min"
+msgstr "cada 15 min"
+
+msgid "every 2 hours"
+msgstr "cada 2 horas"
+
+msgid "every 2 min (watch closely)"
+msgstr "cada 2 min (vigilancia estrecha)"
+
+msgid "every 30 min (let them rest)"
+msgstr "cada 30 min (que descansen)"
+
+msgid "every 5 min"
+msgstr "cada 5 min"
+
+msgid "every hour"
+msgstr "cada hora"
+
+msgid "fan stopped"
+msgstr "ventilador parado"
+
+msgid "fans"
+msgstr "ventiladores"
+
+msgid "generic firmware zone"
+msgstr "zona genérica del firmware"
+
+msgid "goes above"
+msgstr "supera"
+
+msgid "hard disks"
+msgstr "discos duros"
+
+msgid "hidden by default"
+msgstr "oculto por defecto"
+
+msgid "high"
+msgstr "alto"
+
+msgid "hot while idle"
+msgstr "caliente sin trabajar"
+
+msgid "min %s · max %s"
+msgstr "mín. %s · máx. %s"
+
+msgid "motherboard"
+msgstr "placa base"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "not available"
+msgstr "no disponible"
+
+msgid "notification"
+msgstr "notificación"
+
+msgid "now"
+msgstr "ahora"
+
+msgid "power"
+msgstr "consumo"
+
+msgid "read %s (you decide below)"
+msgstr "se lee %s (lo decides abajo)"
+
+msgid "read %s: it does not affect its rest or its lifespan"
+msgstr "se lee %s: no afecta a su reposo ni a su vida útil"
+
+msgid "sensor identifier (see “sensorpulse status --json”)"
+msgstr "identificador del sensor (ver «sensorpulse status --json»)"
+
+msgid "slowing down"
+msgstr "frenando"
+
+msgid "slowing down because of heat"
+msgstr "bajando velocidad por calor"
+
+msgid "sound"
+msgstr "sonido"
+
+msgid "temperature"
+msgstr "temperatura"
+
+msgid "the service is not available"
+msgstr "el servicio no está disponible"
+
+msgid "there is no sensor “%s”"
+msgstr "no existe el sensor «%s»"
+
+msgid "usage"
+msgstr "uso"
+
+msgid "warm: watched every 2 min until it cools down"
+msgstr "templado: se vigila cada 2 min hasta que se enfríe"
+
+msgid "−%d days"
+msgstr "−%d días"
+
+msgid "−%d h"
+msgstr "−%d h"
+
+msgid "−%d min"
+msgstr "−%d min"

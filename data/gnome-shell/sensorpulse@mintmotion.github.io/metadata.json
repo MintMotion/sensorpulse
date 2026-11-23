@@ -1,0 +1,16 @@
+{
+  "uuid": "sensorpulse@mintmotion.github.io",
+  "name": "SensorPulse",
+  "description": "Temperatures, fans and alarms in the top bar. Needs the SensorPulse program.",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51"
+  ],
+  "url": "https://github.com/MintMotion/sensorpulse",
+  "version-name": "0.3.8"
+}

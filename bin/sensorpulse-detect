@@ -1,0 +1,271 @@
+#!/usr/bin/python3 -I
+"""SensorPulse — activar sensores de placa base y de discos (se ejecuta como root con pkexec).
+
+Solo carga controladores de una lista blanca del propio kernel. Cada controlador
+de «Super I/O» lee los registros de identificación de su chip (puertos 0x2e/0x4e) y, si no
+lo encuentra, no se queda cargado. Esa lectura es la misma que hace «sensors-detect» y en
+algún portátil puede colgar el equipo: por eso NO se hace en portátiles, tabletas ni
+máquinas virtuales salvo que se pida expresamente (--laptop-ok, tras confirmarlo el usuario).
+Un controlador solo se da por bueno si el sensor nuevo es suyo (no de otro dispositivo que
+se conectara en ese momento). Los que funcionan se dejan activados en
+/etc/modules-load.d/sensorpulse.conf (el paquete lo borra al desinstalar).
+
+No cambia ningún ajuste de la BIOS, del arranque ni de los ventiladores.
+Salida: JSON en una línea.
+"""
+
+import fcntl
+import glob
+import json
+import os
+import subprocess
+import sys
+import tempfile
+import time
+
+CONF = "/etc/modules-load.d/sensorpulse.conf"
+
+# Chips «Super I/O» de placa base (temperaturas, voltajes y ventiladores). Un equipo
+# normal tiene uno: en cuanto uno funciona no se prueban los demás de esta lista.
+SUPERIO = ["nct6775", "nct6683", "it87", "f71882fg", "w83627ehf", "w83627hf",
+           "sch5627", "sch5636"]
+# Sensores de placas ASUS: el propio controlador comprueba el modelo de placa.
+VENDOR = ["asus_ec_sensors", "asus_wmi_sensors"]
+DISK = "drivetemp"
+WHITELIST = set(SUPERIO + VENDOR + [DISK])
+
+
+def hwmon_names():
+    out = set()
+    for hw in glob.glob("/sys/class/hwmon/hwmon*"):
+        try:
+            with open(os.path.join(hw, "name")) as f:
+                out.add((os.path.realpath(hw), f.read().strip()))
+        except OSError:
+            pass
+    return out
+
+
+def loaded(mod):
+    return os.path.isdir("/sys/module/" + mod.replace("-", "_"))
+
+
+def has_sata_disks():
+    for dev in glob.glob("/sys/class/scsi_disk/*/device"):
+        try:
+            with open(os.path.join(dev, "vendor")) as f:
+                if f.read().strip().upper().startswith("ATA"):
+                    return True
+        except OSError:
+            pass
+    return False
+
+
+# Prefijos del nombre hwmon que crea cada controlador (para atribuirle el sensor nuevo)
+NAME_PREFIX = {
+    "nct6775": ("nct67", "nct679"), "nct6683": ("nct668",), "it87": ("it8", "it87"),
+    "f71882fg": ("f718", "f8"), "w83627ehf": ("w8362", "nct6775"),
+    "w83627hf": ("w83627", "w83697", "w83687"), "sch5627": ("sch5627",), "sch5636": ("sch5636",),
+    "asus_ec_sensors": ("asusec", "asus"), "asus_wmi_sensors": ("asuswmisensors", "asus"),
+    "drivetemp": ("drivetemp",),
+}
+LAPTOP_CHASSIS = {8, 9, 10, 11, 14, 30, 31, 32}
+
+
+def dmi(field):
+    try:
+        with open("/sys/class/dmi/id/" + field) as f:
+            return f.read().strip()
+    except OSError:
+        return ""
+
+
+def is_laptop():
+    try:
+        return int(dmi("chassis_type") or 0) in LAPTOP_CHASSIS
+    except ValueError:
+        return False
+
+
+def is_virtual():
+    try:
+        with open("/proc/cpuinfo") as f:
+            if any(l.startswith("flags") and " hypervisor" in l for l in f):
+                return True
+    except OSError:
+        pass
+    return any(w in dmi("product_name").lower() + dmi("sys_vendor").lower()
+               for w in ("virtualbox", "vmware", "kvm", "qemu", "xen", "bochs", "hyper-v"))
+
+
+def attributed(hw, name, mod):
+    """¿Este hwmon lo ha creado el módulo mod? Por su nombre, por el driver que lo controla
+    o por el módulo de ese driver."""
+    m = mod.replace("-", "_")
+    if any(name.startswith(p) for p in NAME_PREFIX.get(mod, (m,))):
+        return True
+    for link in ("device/driver", "device/driver/module"):
+        try:
+            base = os.path.basename(os.path.realpath(os.path.join(hw, link))).replace("-", "_")
+        except OSError:
+            continue
+        if base == m or base.startswith(m + "_") or (base.startswith(m)):
+            return True
+    return False
+
+
+def modprobe(mod, remove=False):
+    if mod not in WHITELIST:
+        return False
+    cmd = ["modprobe", "-q"] + (["-r"] if remove else []) + [mod]
+    try:
+        return subprocess.run(cmd, timeout=30).returncode == 0
+    except (OSError, subprocess.SubprocessError):
+        return False
+
+
+def has_driver(mod):
+    try:
+        return subprocess.run(["modinfo", "-n", mod], stdout=subprocess.DEVNULL,
+                              stderr=subprocess.DEVNULL, timeout=10).returncode == 0
+    except (OSError, subprocess.SubprocessError):
+        return True   # sin modinfo: que lo diga modprobe
+
+
+def try_module(mod):
+    """Carga el módulo; si no aparece ningún sensor nuevo, lo vuelve a descargar."""
+    if loaded(mod):
+        return "already"
+    if not has_driver(mod):
+        return "no_driver"      # el kernel de la distribución no trae este controlador
+    before = hwmon_names()
+    if not modprobe(mod):
+        return "no_chip"        # el controlador existe pero no encuentra su chip
+    for _i in range(20):
+        time.sleep(0.1)
+        # solo cuenta un sensor nuevo que sea de ESTE módulo: otro dispositivo (un USB, un
+        # disco...) puede aparecer a la vez y no hay que fijar el módulo por su culpa
+        if any(attributed(hw, name, mod) for hw, name in hwmon_names() - before):
+            return "ok"
+    modprobe(mod, remove=True)
+    return "nothing"
+
+
+def acpi_conflict():
+    try:
+        out = subprocess.run(["dmesg"], capture_output=True, text=True, timeout=10).stdout
+    except (OSError, subprocess.SubprocessError):
+        return False
+    # una línea concreta del driver, no palabras sueltas repartidas por todo dmesg
+    for line in out.splitlines():
+        low = line.lower()
+        if ("it87" in low or "nct67" in low or "w83627" in low or "f71882" in low) and \
+                "acpi" in low and ("conflict" in low or "opregion" in low):
+            return True
+    return False
+
+
+def previous():
+    try:
+        with open(CONF) as f:
+            return [l.strip() for l in f if l.strip() and not l.startswith("#")
+                    and l.strip() in WHITELIST]
+    except OSError:
+        return []
+
+
+def _fsync_dir(d):
+    try:
+        fd = os.open(d, os.O_RDONLY)
+        try:
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+    except OSError:
+        pass
+
+
+def _write_conf(mods):
+    """Escritura atómica y duradera (la 0.3.5 no hacía fsync: tras un corte de luz el fichero
+    podía quedar vacío) con un temporal único (dos ejecuciones a la vez compartían .tmp)."""
+    d = os.path.dirname(CONF)
+    os.makedirs(d, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(prefix=".sensorpulse.", suffix=".tmp", dir=d)
+    try:
+        with os.fdopen(fd, "w") as f:
+            f.write("# SensorPulse: sensores activados con «Detectar sensores».\n"
+                    "# Se borra al desinstalar el programa.\n")
+            f.write("\n".join(mods) + "\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.chmod(tmp, 0o644)
+        os.replace(tmp, CONF)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
+    _fsync_dir(d)
+
+
+def _lock():
+    """Una sola ejecución a la vez (dos ventanas de «Detectar sensores», o dos usuarios)."""
+    try:
+        fd = os.open("/run/sensorpulse-detect.lock", os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW, 0o600)
+    except OSError:
+        return None
+    fcntl.flock(fd, fcntl.LOCK_EX)
+    return fd
+
+
+_LOCK = None
+
+
+def main():
+    if os.geteuid() != 0:
+        print(json.dumps({"error": "root"}))
+        return 1
+    global _LOCK
+    _LOCK = _lock()   # se mantiene hasta salir
+    laptop_ok = "--laptop-ok" in sys.argv[1:]
+    keep = [m for m in previous() if loaded(m)]
+    results = {}
+    skipped = None
+    if not any(loaded(m) for m in SUPERIO):
+        if is_virtual():
+            skipped = "virtual"
+        elif is_laptop() and not laptop_ok:
+            skipped = "laptop"
+    if not any(loaded(m) for m in SUPERIO) and skipped is None:
+        for m in SUPERIO:
+            r = try_module(m)
+            results[m] = r
+            if r == "ok":
+                keep.append(m)
+                break
+    for m in VENDOR:
+        r = try_module(m)
+        results[m] = r
+        if r == "ok":
+            keep.append(m)
+    if has_sata_disks():
+        r = try_module(DISK)
+        results[DISK] = r
+        if r in ("ok", "already"):
+            keep.append(DISK)
+    keep = sorted(set(keep))
+    if keep:
+        _write_conf(keep)
+    elif os.path.exists(CONF):
+        os.remove(CONF)
+        _fsync_dir(os.path.dirname(CONF))
+    new_ok = [m for m, r in results.items() if r == "ok"]
+    print(json.dumps({"activated": new_ok, "kept": keep, "results": results,
+                      "skipped": skipped,
+                      "acpi_conflict": (not new_ok and skipped is None and acpi_conflict())}))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,1165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sensorpulse\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%(name)s has dropped to %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr "%(name)s が %(value)s%(unit)s まで下がりました（限度 %(limit)s%(unit)s）。"
+
+msgid "%(name)s has reached %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr "%(name)s が %(value)s%(unit)s に達しました（限度 %(limit)s%(unit)s）。"
+
+msgid "%(name)s has stopped while %(ref)s is at %(value).0f%(unit)s."
+msgstr "%(ref)s が %(value).0f%(unit)s なのに %(name)s が停止しました。"
+
+msgid "%(name)s is at %(value).0f%(unit)s while the computer is almost idle (%(load).0f%% load). Make sure the air vents are not blocked."
+msgstr "%(name)s はほとんど負荷がないのに %(value).0f%(unit)s です（負荷 %(load).0f%%）。通気口がふさがれていないか確認してください。"
+
+msgid "%(name)s is at its limit (%(value).0f%(unit)s) and has to slow down a lot to protect itself. Make sure the air vents are not blocked and the fans are working."
+msgstr "%(name)s は限界温度（%(value).0f%(unit)s）に達し、身を守るために大きく速度を下げています。通気口がふさがれていないか、ファンが動いているか確認してください。"
+
+msgid "%(name)s is back to %(value)s%(unit)s."
+msgstr "%(name)s は %(value)s%(unit)s に戻りました。"
+
+msgid "%(name)s is reducing its speed to protect itself from heat (%(value).0f%(unit)s)."
+msgstr "%(name)s は熱から自身を守るために速度を下げています（%(value).0f%(unit)s）。"
+
+msgid "%d custom alarm rule(s) were invalid and have been ignored."
+msgstr "カスタムアラームルール %d 件が無効だったため無視されました。"
+
+msgid "%d min"
+msgstr "%d 分"
+
+msgid "%s cannot be read (check its permissions). The last good copy or the defaults are being used, and the file will not be overwritten."
+msgstr "%s を読み込めません（アクセス権を確認してください）。最後の正常なコピーまたは既定値を使用し、このファイルは上書きしません。"
+
+msgid "%s could not be uninstalled. Another program may be installing updates: try again in a few minutes."
+msgstr "%s をアンインストールできませんでした。別のプログラムが更新をインストール中かもしれません。数分後にもう一度お試しください。"
+
+msgid "%s settings"
+msgstr "%s の設定"
+
+msgid "--days must be between 0 and 3650"
+msgstr "--days は 0 から 3650 の間で指定してください"
+
+msgid "0 RPM at start: maybe nothing connected"
+msgstr "起動時 0 RPM：何も接続されていない可能性"
+
+msgid "1 hour"
+msgstr "1時間"
+
+msgid "10 min"
+msgstr "10分"
+
+msgid "24 hours"
+msgstr "24時間"
+
+msgid "30 days"
+msgstr "30日"
+
+msgid "7 days"
+msgstr "7日"
+
+msgid "A long interval lets the disk rest (spin down), but a disk could heat up between two readings without the alarm going off. A short interval watches it closely, but on many disks each reading stops them from going to sleep."
+msgstr "間隔を長くするとディスクは休めます（回転が止まります）が、2回の読み取りの間に温度が上がってもアラームが鳴らない可能性があります。間隔を短くすると細かく監視できますが、多くのディスクでは読み取りのたびにスリープできなくなります。"
+
+msgid "A sign that the air vents may be blocked or the cooling is not working well."
+msgstr "通気口がふさがれているか、冷却がうまく働いていない可能性があります。"
+
+msgid "A very soft glow whose color follows the state of your computer."
+msgstr "コンピューターの状態に合わせて色が変わる、ごく柔らかな光です。"
+
+msgid "A warm disk is working, so reading it more often does not take away its rest. With the disk service (UDisks2), a disk that is asleep is not woken up to read it."
+msgstr "温かいディスクは動作中なので、頻繁に読み取っても休止を妨げません。ディスクサービス（UDisks2）があれば、スリープ中のディスクを読み取りのために起こすことはありません。"
+
+msgid "ACPI zone"
+msgstr "ACPIゾーン"
+
+msgid "ACPI zone %s"
+msgstr "ACPIゾーン %s"
+
+msgid "About"
+msgstr "このアプリについて"
+
+msgid "Accent color"
+msgstr "アクセントカラー"
+
+msgid "Activates the motherboard and disk sensors that are not loaded. Your password will be asked once."
+msgstr "読み込まれていないマザーボードとディスクのセンサーを有効にします。パスワードを1回だけ尋ねます。"
+
+msgid "Add or hide sensors"
+msgstr "センサーの追加・非表示"
+
+msgid "Alarm"
+msgstr "アラーム"
+
+msgid "Alarm clock"
+msgstr "目覚まし"
+
+msgid "Alarm sound"
+msgstr "アラーム音"
+
+msgid "Alarms"
+msgstr "アラーム"
+
+msgid "Alarms for this sensor…"
+msgstr "このセンサーのアラーム…"
+
+msgid "All good"
+msgstr "異常なし"
+
+msgid "All set"
+msgstr "準備完了"
+
+msgid "Also delete my settings and alarms"
+msgstr "設定とアラームも削除する"
+
+msgid "Also warn when something is hot (not only critical)"
+msgstr "高温時にも通知する（危険時だけでなく）"
+
+msgid "Always on top"
+msgstr "常に最前面"
+
+msgid "Animate fan icons"
+msgstr "ファンのアイコンを回転させる"
+
+msgid "Anonymous summary of your sensors to paste in a forum or a bug report. It does not include your name, computer name or serial numbers."
+msgstr "フォーラムや不具合報告に貼り付けるためのセンサーの匿名の概要です。名前、コンピューター名、シリアル番号は含まれません。"
+
+msgid "Appearance"
+msgstr "外観"
+
+msgid "Assistant"
+msgstr "アシスタント"
+
+msgid "Attention"
+msgstr "注意"
+
+msgid "Attention!"
+msgstr "注意！"
+
+msgid "Aurora background"
+msgstr "オーロラ背景"
+
+msgid "Automatic"
+msgstr "自動"
+
+msgid "Automatic (CPU)"
+msgstr "自動（CPU）"
+
+msgid "Automatic alarms"
+msgstr "自動アラーム"
+
+msgid "Avoids false alarms from short peaks."
+msgstr "短い一時的な上昇による誤報を防ぎます。"
+
+msgid "Back"
+msgstr "戻る"
+
+msgid "Back to normal"
+msgstr "正常に戻りました"
+
+msgid "Back to recommended"
+msgstr "推奨設定に戻す"
+
+msgid "Bars"
+msgstr "バー"
+
+msgid "Battery"
+msgstr "バッテリー"
+
+msgid "Bell"
+msgstr "ベル"
+
+msgid "Bento (one large card)"
+msgstr "Bento（大きなカード1枚）"
+
+msgid "Blink when an alarm is active"
+msgstr "アラーム中は点滅する"
+
+msgid "Busiest cores"
+msgstr "最も忙しいコア"
+
+msgid "CCD %s"
+msgstr "CCD %s"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU (control)"
+msgstr "CPU（制御）"
+
+msgid "CPU clock"
+msgstr "CPUクロック"
+
+msgid "CPU die"
+msgstr "CPU（ダイ）"
+
+msgid "CPU load"
+msgstr "CPU使用率"
+
+msgid "CPU package"
+msgstr "CPU（パッケージ）"
+
+msgid "CRITICAL"
+msgstr "危険"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cards with all your sensors, always at hand"
+msgstr "すべてのセンサーをカードで、いつでも確認"
+
+msgid "Charge"
+msgstr "充電量"
+
+msgid "Charge cycles"
+msgstr "充電サイクル"
+
+msgid "Chart of %(name)s: min %(min)s, max %(max)s, now %(now)s"
+msgstr "%(name)s のグラフ：最小 %(min)s、最大 %(max)s、現在 %(now)s"
+
+msgid "Chime"
+msgstr "チャイム"
+
+msgid "Choose a style"
+msgstr "スタイルを選択"
+
+msgid "Choose what is shown and where. Double-click a name to rename it."
+msgstr "表示する内容と場所を選びます。名前をダブルクリックすると変更できます。"
+
+msgid "Classic (all the same size)"
+msgstr "クラシック（すべて同じサイズ）"
+
+msgid "Click for details"
+msgstr "クリックで詳細"
+
+msgid "Click-through when locked"
+msgstr "ロック中はクリックを透過する"
+
+msgid "Clock %s"
+msgstr "クロック %s"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Cockpit"
+msgstr "コックピット"
+
+msgid "Color and blinking"
+msgstr "色と点滅"
+
+msgid "Color-blind friendly colors"
+msgstr "色覚に配慮した配色"
+
+msgid "Cooling problem"
+msgstr "冷却の問題"
+
+msgid "Copied to the clipboard."
+msgstr "クリップボードにコピーしました。"
+
+msgid "Copy hardware report"
+msgstr "ハードウェアレポートをコピー"
+
+msgid "Core %s"
+msgstr "コア %s"
+
+msgid "Core sensor %s"
+msgstr "コアセンサー %s"
+
+msgid "Critical"
+msgstr "危険"
+
+msgid "Critical (always interrupts)"
+msgstr "重大（常に通知）"
+
+msgid "Critical alarms. ▶ plays it."
+msgstr "危険アラーム用。▶ で再生します。"
+
+msgid "Dark"
+msgstr "ダーク"
+
+msgid "Deep dark"
+msgstr "ディープダーク"
+
+msgid "Degrees it must drop before alarming again"
+msgstr "再通知までに下がるべき温度差"
+
+msgid "Desktop notification"
+msgstr "デスクトップ通知"
+
+msgid "Desktop notifications"
+msgstr "デスクトップ通知"
+
+msgid "Details"
+msgstr "詳細"
+
+msgid "Detect sensors…"
+msgstr "センサーを検出…"
+
+msgid "Digital beeps"
+msgstr "デジタルビープ"
+
+msgid "Disk"
+msgstr "ディスク"
+
+msgid "Disk of unknown type (treated as a hard disk)"
+msgstr "種類不明のディスク（ハードディスクとして扱います）"
+
+msgid "Disk temperature"
+msgstr "ディスク温度"
+
+msgid "Disks"
+msgstr "ディスク"
+
+msgid "Drag to move · right-click for options"
+msgstr "ドラッグで移動・右クリックでオプション"
+
+msgid "Error tone"
+msgstr "エラー音"
+
+msgid "Export history"
+msgstr "履歴をエクスポート"
+
+msgid "Export…"
+msgstr "エクスポート…"
+
+msgid "Fan %s"
+msgstr "ファン %s"
+
+msgid "Fan stopped"
+msgstr "ファンが停止"
+
+msgid "Fans"
+msgstr "ファン"
+
+msgid "Finish"
+msgstr "完了"
+
+msgid "Floating"
+msgstr "フローティング"
+
+msgid "Floating on the desktop"
+msgstr "デスクトップにフローティング表示"
+
+msgid "Floating widget style"
+msgstr "フローティングウィジェットのスタイル"
+
+msgid "For at least (seconds)"
+msgstr "継続時間（秒）"
+
+msgid "Futuristic HUD"
+msgstr "近未来HUD"
+
+msgid "GNOME needs the “AppIndicator” extension to show icons in the top bar (Ubuntu already includes it)."
+msgstr "GNOMEでトップバーにアイコンを表示するには「AppIndicator」拡張機能が必要です（Ubuntuには標準で含まれています）。"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU %s"
+msgstr "GPU %s"
+
+msgid "GPU NVIDIA"
+msgstr "GPU NVIDIA"
+
+msgid "GPU fan"
+msgstr "GPUファン"
+
+msgid "GPU hotspot"
+msgstr "GPU（ホットスポット）"
+
+msgid "GPU load"
+msgstr "GPU使用率"
+
+msgid "GPU memory"
+msgstr "GPUメモリ"
+
+msgid "GPU power"
+msgstr "GPU消費電力"
+
+msgid "GPU sensor %s"
+msgstr "GPUセンサー %s"
+
+msgid "Gauges (like the desktop widget)"
+msgstr "メーター（デスクトップウィジェットと同じ）"
+
+msgid "General"
+msgstr "一般"
+
+msgid "Give it a name of your own, for example «Motherboard» or «Exhaust fan». Leave it empty to use the original name."
+msgstr "好きな名前を付けてください（例:「マザーボード」「排気ファン」）。空欄にすると元の名前を使います。"
+
+msgid "Glass"
+msgstr "ガラス"
+
+msgid "Got it"
+msgstr "了解"
+
+msgid "HOT"
+msgstr "高温"
+
+msgid "Hard disk"
+msgstr "ハードディスク"
+
+msgid "Hard disk reading interval"
+msgstr "ハードディスクの読み取り間隔"
+
+msgid "Health"
+msgstr "健全性"
+
+msgid "Hide floating widget"
+msgstr "フローティングウィジェットを隠す"
+
+msgid "High"
+msgstr "高温"
+
+msgid "History is not being saved"
+msgstr "履歴が保存されていません"
+
+msgid "History of a sensor (CSV by default)."
+msgstr "センサーの履歴（既定は CSV）。"
+
+msgid "I have found %d new sensors. Which ones do you want to see?"
+msgstr "新しいセンサーが %d 個見つかりました。どれを表示しますか？"
+
+msgid "If you choose more sensors for the panel, the rest appear when you click it. Choose which ones in «Sensors»."
+msgstr "パネル用にもっと多くのセンサーを選んだ場合、残りはパネルをクリックすると表示されます。どれにするかは「センサー」で選べます。"
+
+msgid "In a window"
+msgstr "ウィンドウに表示"
+
+msgid "In the panel"
+msgstr "パネルに表示"
+
+msgid "Information"
+msgstr "情報"
+
+msgid "Internal error; monitoring continues."
+msgstr "内部エラー。監視は継続します。"
+
+msgid "It only reads sensors: it never changes fans or hardware settings."
+msgstr "センサーを読み取るだけで、ファンやハードウェアの設定は一切変更しません。"
+
+msgid "JSON output instead of CSV"
+msgstr "CSV の代わりに JSON で出力"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Large"
+msgstr "大"
+
+msgid "Large card"
+msgstr "大きなカード"
+
+msgid "Last reading %d s ago"
+msgstr "最終測定 %d 秒前"
+
+msgid "Let's get your sensor monitor ready in one minute. Nothing needs to be configured by hand."
+msgstr "1分でセンサーモニターの準備をしましょう。手動で設定する必要はありません。"
+
+msgid "Level"
+msgstr "レベル"
+
+msgid "License: %s · Free and open source software"
+msgstr "ライセンス: %s · 自由なオープンソースソフトウェア"
+
+msgid "Light"
+msgstr "ライト"
+
+msgid "Listen"
+msgstr "試聴"
+
+msgid "Live preview with your real data. Values move smoothly and change color as temperatures rise."
+msgstr "実際のデータでライブプレビュー。値は滑らかに動き、温度が上がると色が変わります。"
+
+msgid "Lock position"
+msgstr "位置をロック"
+
+msgid "Locked"
+msgstr "ロック中"
+
+msgid "Look"
+msgstr "表示"
+
+msgid "Measured every 30 s to save battery"
+msgstr "バッテリー節約のため30秒ごとに測定"
+
+msgid "Medium"
+msgstr "中"
+
+msgid "Memory"
+msgstr "メモリ"
+
+msgid "Message"
+msgstr "メッセージ"
+
+msgid "Minimal"
+msgstr "ミニマル"
+
+msgid "More values"
+msgstr "その他の値"
+
+msgid "Motherboard"
+msgstr "マザーボード"
+
+msgid "Mute 1 hour"
+msgstr "1時間ミュート"
+
+msgid "Mute alarms"
+msgstr "アラームを消音"
+
+msgid "Mute alarms for 1 hour"
+msgstr "アラームを1時間消音"
+
+msgid "Mute for 1 hour"
+msgstr "1時間消音"
+
+msgid "Mute for 15 minutes"
+msgstr "15分間消音"
+
+msgid "Mute until tomorrow"
+msgstr "明日まで消音"
+
+msgid "My alarms"
+msgstr "マイアラーム"
+
+msgid "NORMAL"
+msgstr "正常"
+
+msgid "NVMe SSD"
+msgstr "NVMe SSD"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Name and number"
+msgstr "名前と数値"
+
+msgid "Names"
+msgstr "名前"
+
+msgid "Needed for alarms to work when the window is closed."
+msgstr "ウィンドウを閉じていてもアラームが動作するために必要です。"
+
+msgid "New alarm"
+msgstr "新しいアラーム"
+
+msgid "New sensors"
+msgstr "新しいセンサー"
+
+msgid "New sensors activated: %s."
+msgstr "新しいセンサーを有効にしました：%s。"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "Next to the clock and the other icons"
+msgstr "時計や他のアイコンの横に"
+
+msgid "No alarms so far."
+msgstr "まだアラームはありません。"
+
+msgid "No disk with a temperature sensor was found."
+msgstr "温度センサー付きのディスクは見つかりませんでした。"
+
+msgid "No fan speeds found: many laptops do not publish them for Linux. Temperatures will still be monitored."
+msgstr "ファンの回転数が見つかりません。多くのノートPCはLinux向けに公開していません。温度の監視は続けます。"
+
+msgid "No new sensors were found. Everything your computer offers is already being shown."
+msgstr "新しいセンサーは見つかりませんでした。このコンピューターが提供するものはすべて表示されています。"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Not again today"
+msgstr "今日はもう知らせない"
+
+msgid "Note"
+msgstr "メモ"
+
+msgid "Notification"
+msgstr "通知"
+
+msgid "Now"
+msgstr "現在"
+
+msgid "Nuclear plant alarm"
+msgstr "原子力発電所のアラーム"
+
+msgid "OLED minimal"
+msgstr "OLED ミニマル"
+
+msgid "On Cinnamon (Wayland) the widget may not stay behind your windows; use “Always on top” or the X11 session if needed."
+msgstr "Cinnamon（Wayland）ではウィジェットがウィンドウの背面に留まらないことがあります。必要なら「常に最前面」かX11セッションを使ってください。"
+
+msgid "On GNOME (Wayland) the floating widget is shown as a normal window: GNOME does not let apps place widgets on the desktop."
+msgstr "GNOME（Wayland）ではフローティングウィジェットは通常のウィンドウとして表示されます。GNOMEはアプリがデスクトップにウィジェットを置くことを許可していません。"
+
+msgid "On click"
+msgstr "クリック時"
+
+msgid "Open window"
+msgstr "ウィンドウを開く"
+
+msgid "Original name: %s"
+msgstr "元の名前: %s"
+
+msgid "Panel"
+msgstr "パネル"
+
+msgid "Panel look"
+msgstr "パネルの表示"
+
+msgid "Panel: next to the clock. On click: only in the list that opens when you click the panel. Floating: the desktop widget."
+msgstr "パネル: 時計の横。クリック時: パネルをクリックしたときに開く一覧にのみ表示。フローティング: デスクトップウィジェット。"
+
+msgid "Power"
+msgstr "電力"
+
+msgid "Power draw"
+msgstr "消費電力"
+
+msgid "Quit"
+msgstr "終了"
+
+msgid "RAM"
+msgstr "RAM"
+
+msgid "RAM in use"
+msgstr "RAM使用量"
+
+msgid "Read hard disk temperatures"
+msgstr "ハードディスクの温度を読み取る"
+
+msgid "Recent alarms"
+msgstr "最近のアラーム"
+
+msgid "Recommended limits are read from your hardware. You can add your own alarms (for example, at 75 °C) later in Settings."
+msgstr "推奨の限度値はハードウェアから読み取ります。独自のアラーム（例：75 °C）は後で設定から追加できます。"
+
+msgid "Reconnecting to the sensor service…"
+msgstr "センサーサービスに再接続中…"
+
+msgid "Reducing speed because of heat"
+msgstr "熱のため速度を低下中"
+
+msgid "Refresh every (seconds)"
+msgstr "更新間隔（秒）"
+
+msgid "Rename a sensor…"
+msgstr "センサーの名前を変更…"
+
+msgid "Rename sensor"
+msgstr "センサーの名前を変更"
+
+msgid "Rename «%s»…"
+msgstr "「%s」の名前を変更…"
+
+msgid "Repeat the sound"
+msgstr "音を繰り返す"
+
+msgid "Repeat the sound every 2 minutes while the alarm lasts"
+msgstr "アラーム中は2分ごとに音を繰り返す"
+
+msgid "Reset min/max"
+msgstr "最小/最大をリセット"
+
+msgid "Restart SensorPulse"
+msgstr "SensorPulse を再起動"
+
+msgid "Restart the service"
+msgstr "サービスを再起動"
+
+msgid "Resting"
+msgstr "休止中"
+
+msgid "Resting (not woken up to save power)"
+msgstr "休止中（省電力のため起動しません）"
+
+msgid "Resting · measured every 30 s to save battery"
+msgstr "休止中・バッテリー節約のため30秒ごとに測定"
+
+msgid "Ring"
+msgstr "着信音"
+
+msgid "Rings"
+msgstr "リング"
+
+msgid "Run the welcome assistant again"
+msgstr "ようこそアシスタントをもう一度実行"
+
+msgid "SATA SSD"
+msgstr "SATA SSD"
+
+msgid "SLOWING DOWN"
+msgstr "減速中"
+
+msgid "SSD"
+msgstr "SSD"
+
+msgid "SSD sensor %s"
+msgstr "SSDセンサー %s"
+
+msgid "Same as the system"
+msgstr "システムと同じ"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save the history of this sensor as CSV or JSON"
+msgstr "このセンサーの履歴を CSV または JSON で保存"
+
+msgid "Search for new sensors"
+msgstr "新しいセンサーを検索"
+
+msgid "Sensor"
+msgstr "センサー"
+
+msgid "Sensor monitor for Debian, Ubuntu, Linux Mint and derivatives."
+msgstr "Debian、Ubuntu、Linux Mint とその派生版向けのセンサーモニター。"
+
+msgid "SensorPulse has been updated."
+msgstr "SensorPulse が更新されました。"
+
+msgid "Sensors"
+msgstr "センサー"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Settings could not be read"
+msgstr "設定を読み込めませんでした"
+
+msgid "Show"
+msgstr "表示"
+
+msgid "Show selected"
+msgstr "選択したものを表示"
+
+msgid "Show the names in the panel"
+msgstr "パネルに名前を表示"
+
+msgid "Show/hide floating widget"
+msgstr "フローティングウィジェットの表示/非表示"
+
+msgid "Shows a test notification and plays the alarm sound."
+msgstr "テスト通知を表示し、アラーム音を鳴らします。"
+
+msgid "Shows the temperatures in the panel and warns you only when it matters. Or press “Start” to choose everything yourself."
+msgstr "パネルに温度を表示し、必要なときだけ知らせます。すべて自分で選ぶには「開始」を押してください。"
+
+msgid "Size"
+msgstr "サイズ"
+
+msgid "Slowing down because of heat"
+msgstr "熱のため速度を低下中"
+
+msgid "Small"
+msgstr "小"
+
+msgid "Soft beep"
+msgstr "やさしいビープ"
+
+msgid "Soft chime"
+msgstr "やさしいチャイム"
+
+msgid "Soft sound for warnings"
+msgstr "警告にやわらかい音"
+
+msgid "Some alarm rules were ignored"
+msgstr "一部のアラームルールが無視されました"
+
+msgid "Something is hot"
+msgstr "高温の部品があります"
+
+msgid "Sonar ping"
+msgstr "ソナーのピン"
+
+msgid "Sound"
+msgstr "サウンド"
+
+msgid "Sound alarm"
+msgstr "音声アラーム"
+
+msgid "Start"
+msgstr "開始"
+
+msgid "Start with the computer"
+msgstr "コンピューターの起動時に開始"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Style"
+msgstr "スタイル"
+
+msgid "System"
+msgstr "システム"
+
+msgid "Temperature %s"
+msgstr "温度 %s"
+
+msgid "Temperature alarm"
+msgstr "温度アラーム"
+
+msgid "Temperature unit"
+msgstr "温度の単位"
+
+msgid "Test alarm"
+msgstr "アラームのテスト"
+
+msgid "The panel shows a few values next to the clock, and clicking it shows the rest. The desktop widget shows larger gauges. On the next pages you choose which sensors go to each place and you can give them names of your own."
+msgstr "パネルには時計の横にいくつかの値が表示され、クリックすると残りが表示されます。デスクトップウィジェットには大きなメーターが表示されます。次のページで、どのセンサーをどこに表示するかを選び、好きな名前を付けることができます。"
+
+msgid "The program restarts to apply the new language."
+msgstr "新しい言語を適用するため、プログラムを再起動します。"
+
+msgid "The program will be removed. Your password will be requested."
+msgstr "プログラムを削除します。パスワードの入力を求められます。"
+
+msgid "The recommended sensors are already selected. Panel: next to the clock. On click: only in the list that opens when you click the panel. Widget: the floating desktop widget. Type a name of your own if you like (for example «Motherboard» instead of «diode 0»)."
+msgstr "おすすめのセンサーはすでに選択されています。パネル: 時計の横。クリック時: パネルをクリックしたときに開く一覧にのみ表示。ウィジェット: デスクトップのフローティングウィジェット。好きな名前も入力できます（例:「diode 0」の代わりに「マザーボード」）。"
+
+msgid "The sensor history could not be written (%s). Alarms keep working."
+msgstr "センサー履歴を書き込めませんでした（%s）。アラームは引き続き動作します。"
+
+msgid "The sensor service could not be started."
+msgstr "センサーサービスを開始できませんでした。"
+
+msgid "The sensors could not be activated."
+msgstr "センサーを有効にできませんでした。"
+
+msgid "The settings could not be saved (%s)."
+msgstr "設定を保存できませんでした（%s）。"
+
+msgid "The settings file was damaged. It was saved as %s and the last good copy or the defaults are being used."
+msgstr "設定ファイルが破損していました。%s として保存し、最後の正常なコピーまたは初期値を使用しています。"
+
+msgid "The system does not include drivers for these sensors (this is normal in virtual machines and some cloud kernels)."
+msgstr "このシステムにはこれらのセンサーのドライバーが含まれていません（仮想マシンや一部のクラウド向けカーネルでは普通です）。"
+
+msgid "The values will appear in the top bar. The first time, you may need to log out and back in."
+msgstr "値はトップバーに表示されます。初回は一度ログアウトして再ログインが必要な場合があります。"
+
+msgid "The volume rises little by little. «Got it» in the notification stops it."
+msgstr "音量は少しずつ上がります。通知の「了解」で止まります。"
+
+msgid "Theme"
+msgstr "テーマ"
+
+msgid "Thermal zone"
+msgstr "サーマルゾーン"
+
+msgid "They will stay active after restarting."
+msgstr "再起動後も有効なままです。"
+
+msgid "This computer does not expose physical sensors (this is normal in virtual machines)."
+msgstr "このコンピューターには物理センサーがありません（仮想マシンでは普通です）。"
+
+msgid "This computer is a laptop. Laptops rarely have motherboard sensors, and testing for them can freeze some models. Try anyway?"
+msgstr "このコンピューターはノートPCです。ノートPCにはマザーボードのセンサーがほとんどなく、検出を試すと一部の機種でフリーズすることがあります。それでも試しますか？"
+
+msgid "This is how an alarm will look and sound."
+msgstr "アラームはこのように表示され、鳴ります。"
+
+msgid "This is normal under load"
+msgstr "負荷時はこれが普通です"
+
+msgid "This is what I found on your computer:"
+msgstr "お使いのコンピューターで見つかったもの:"
+
+msgid "This option is not available on this system."
+msgstr "このシステムではこのオプションは使用できません。"
+
+msgid "Too hot for the workload"
+msgstr "負荷に対して温度が高すぎます"
+
+msgid "Transparent; place it anywhere with the mouse"
+msgstr "透明。マウスで好きな場所に置けます"
+
+msgid "Try anyway"
+msgstr "それでも試す"
+
+msgid "Turn it off to fit more values in less space."
+msgstr "オフにすると、少ない幅により多くの値を表示できます。"
+
+msgid "Turn this off if your disks must never be woken up: without the disk service (UDisks2) the program cannot tell whether a disk is asleep."
+msgstr "ディスクを絶対に起こしたくない場合はオフにしてください。ディスクサービス（UDisks2）がないと、ディスクがスリープ中かどうか判別できません。"
+
+msgid "Two-tone alarm"
+msgstr "2音のアラーム"
+
+msgid "Uninstall"
+msgstr "アンインストール"
+
+msgid "Uninstall %s?"
+msgstr "%s をアンインストールしますか？"
+
+msgid "Uninstall %s…"
+msgstr "%s をアンインストール…"
+
+msgid "Unmute"
+msgstr "消音を解除"
+
+msgid "Use recommended settings and finish"
+msgstr "おすすめの設定で完了"
+
+msgid "Use the limits recommended by your hardware."
+msgstr "ハードウェアの推奨限度値を使用します。"
+
+msgid "Values in the panel"
+msgstr "パネルの値の数"
+
+msgid "Values shown in the panel"
+msgstr "パネルに表示する値の数"
+
+msgid "Version"
+msgstr "バージョン"
+
+msgid "Visual alarm (color and blinking)"
+msgstr "視覚アラーム（色と点滅）"
+
+msgid "Wait before alarming (seconds)"
+msgstr "アラームまでの待ち時間（秒）"
+
+msgid "Waiting for data…"
+msgstr "データを待っています…"
+
+msgid "Warn me if something gets too hot"
+msgstr "高温になりすぎたら知らせる"
+
+msgid "Warn when a fan stops"
+msgstr "ファンが止まったら知らせる"
+
+msgid "Warn when it gets hot while almost idle"
+msgstr "ほとんど負荷がないのに熱くなったら知らせる"
+
+msgid "Warn when the CPU or GPU slows down because of heat"
+msgstr "CPU や GPU が熱で速度を下げたら知らせる"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Warning (it waits if you are busy)"
+msgstr "警告（作業中は後で通知）"
+
+msgid "Warning sound"
+msgstr "警告音"
+
+msgid "Warnings only show a notification; critical alarms also play the sound. During games or full-screen videos only critical alarms interrupt."
+msgstr "警告は通知のみで、重大なアラームは音も鳴ります。ゲームや全画面の動画中は、重大なアラームだけが割り込みます。"
+
+msgid "Watch a hard disk every 2 minutes while it is warm"
+msgstr "ハードディスクが温かい間は2分ごとに監視する"
+
+msgid "Welcome"
+msgstr "ようこそ"
+
+msgid "Welcome to %s"
+msgstr "%s へようこそ"
+
+msgid "What do you want to monitor, and where?"
+msgstr "何を、どこで監視しますか？"
+
+msgid "When it"
+msgstr "条件"
+
+msgid "Where do you want to see your sensors?"
+msgstr "センサーをどこに表示しますか？"
+
+msgid "Where to show the sensors"
+msgstr "センサーの表示場所"
+
+msgid "While you were busy"
+msgstr "作業中の出来事"
+
+msgid "Widget"
+msgstr "ウィジェット"
+
+msgid "Window layout"
+msgstr "ウィンドウのレイアウト"
+
+msgid "You can choose more than one. You can change this at any time."
+msgstr "複数選べます。いつでも変更できます。"
+
+msgid "You have no alarms of your own yet."
+msgstr "独自のアラームはまだありません。"
+
+msgid "Your %(model)s is designed to work up to %(tj).0f%(unit)s under load. You will be warned if it goes beyond that, if it slows down because of heat or if it gets hot while doing almost nothing."
+msgstr "お使いの %(model)s は負荷時に %(tj).0f%(unit)s まで動作するよう設計されています。それを超えたとき、熱で速度を下げたとき、ほとんど何もしていないのに熱くなったときにお知らせします。"
+
+msgid "Your %(model)s will raise an alarm at %(crit).0f%(unit)s."
+msgstr "%(model)s は %(crit).0f%(unit)s でアラームを出します。"
+
+msgid "Your desktop has transparency turned off; the widget will have a solid background. You can enable the compositor in your desktop settings."
+msgstr "デスクトップの透過が無効のため、ウィジェットは不透明な背景になります。デスクトップ設定でコンポジターを有効にできます。"
+
+msgid "Your motherboard reserves its sensor chip for its own use, so it cannot be activated safely."
+msgstr "マザーボードがセンサーチップを専用に確保しているため、安全に有効化できません。"
+
+msgid "Your sensors are being watched. You will only be warned when it matters."
+msgstr "センサーの監視を始めました。必要なときだけお知らせします。"
+
+msgid "above"
+msgstr "以上"
+
+msgid "advanced reading"
+msgstr "詳細な読み取り値"
+
+msgid "alarms muted until %s"
+msgstr "%s までアラーム消音中"
+
+msgid "asleep"
+msgstr "スリープ中"
+
+msgid "below"
+msgstr "以下"
+
+msgid "clock"
+msgstr "クロック"
+
+msgid "collecting data…"
+msgstr "データ収集中…"
+
+msgid "color"
+msgstr "色"
+
+msgid "control value with offset (not the real temperature)"
+msgstr "オフセット付きの制御値（実際の温度ではありません）"
+
+msgid "critical"
+msgstr "危険"
+
+msgid "days back (default 1)"
+msgstr "さかのぼる日数（既定は 1）"
+
+msgid "disk temperature can be enabled later (optional)"
+msgstr "ディスク温度は後で有効にできます（任意）"
+
+msgid "drops below"
+msgstr "を下回る"
+
+msgid "duplicate of the main sensor"
+msgstr "メインセンサーと重複"
+
+msgid "every %d h"
+msgstr "%d時間ごと"
+
+msgid "every %d min"
+msgstr "%d分ごと"
+
+msgid "every %d s"
+msgstr "%d秒ごと"
+
+msgid "every 10 min"
+msgstr "10分ごと"
+
+msgid "every 15 min"
+msgstr "15分ごと"
+
+msgid "every 2 hours"
+msgstr "2時間ごと"
+
+msgid "every 2 min (watch closely)"
+msgstr "2分ごと（こまめに監視）"
+
+msgid "every 30 min (let them rest)"
+msgstr "30分ごと（休ませる）"
+
+msgid "every 5 min"
+msgstr "5分ごと"
+
+msgid "every hour"
+msgstr "1時間ごと"
+
+msgid "fan stopped"
+msgstr "ファン停止"
+
+msgid "fans"
+msgstr "ファン"
+
+msgid "generic firmware zone"
+msgstr "ファームウェアの汎用ゾーン"
+
+msgid "goes above"
+msgstr "を超える"
+
+msgid "hard disks"
+msgstr "ハードディスク"
+
+msgid "hidden by default"
+msgstr "既定で非表示"
+
+msgid "high"
+msgstr "高温"
+
+msgid "hot while idle"
+msgstr "低負荷なのに高温"
+
+msgid "min %s · max %s"
+msgstr "最小 %s · 最大 %s"
+
+msgid "motherboard"
+msgstr "マザーボード"
+
+msgid "normal"
+msgstr "正常"
+
+msgid "not available"
+msgstr "利用不可"
+
+msgid "notification"
+msgstr "通知"
+
+msgid "now"
+msgstr "現在"
+
+msgid "power"
+msgstr "電力"
+
+msgid "read %s (you decide below)"
+msgstr "%s読み取り（下で選べます）"
+
+msgid "read %s: it does not affect its rest or its lifespan"
+msgstr "%s読み取り: 休止や寿命には影響しません"
+
+msgid "sensor identifier (see “sensorpulse status --json”)"
+msgstr "センサーの識別子（「sensorpulse status --json」を参照）"
+
+msgid "slowing down"
+msgstr "減速中"
+
+msgid "slowing down because of heat"
+msgstr "熱で速度低下"
+
+msgid "sound"
+msgstr "音"
+
+msgid "temperature"
+msgstr "温度"
+
+msgid "the service is not available"
+msgstr "サービスを利用できません"
+
+msgid "there is no sensor “%s”"
+msgstr "センサー「%s」はありません"
+
+msgid "usage"
+msgstr "使用率"
+
+msgid "warm: watched every 2 min until it cools down"
+msgstr "温かい: 冷えるまで2分ごとに監視"
+
+msgid "−%d days"
+msgstr "−%d日"
+
+msgid "−%d h"
+msgstr "−%d時間"
+
+msgid "−%d min"
+msgstr "−%d分"

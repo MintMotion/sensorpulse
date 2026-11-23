@@ -1,0 +1,58 @@
+name: Pruebas y paquete
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq pyflakes3 python3-pytest python3-gi python3-gi-cairo python3-cairo \
+            gir1.2-gtk-3.0 gettext xvfb dbus-x11 libxml2-utils lintian
+      - name: Comprobar el código
+        run: |
+          pyflakes3 sensorpulse tests tools
+          python3 -m compileall -q sensorpulse
+          for po in sensorpulse/po/*.po; do msgfmt --check -o /dev/null "$po"; done
+          for js in data/cinnamon/applet/*/applet.js data/cinnamon/desklet/*/desklet.js; do node --check "$js"; done
+          cp data/gnome-shell/*/extension.js /tmp/extension.mjs && node --check /tmp/extension.mjs
+          xmllint --noout data/*.xml data/*.policy
+      - name: Pruebas del núcleo
+        run: |
+          python3 -m pytest -q tests/test_core.py tests/test_audit.py
+          python3 tests/test_036.py
+          python3 tests/test_037.py
+      - name: Pruebas del servicio D-Bus
+        run: dbus-run-session -- python3 tests/service_regress.py
+      - name: Pruebas de la interfaz (sensores simulados)
+        run: |
+          python3 tools/fake_sysfs.py /tmp/sp-sys
+          export SENSORPULSE_SYSROOT=/tmp/sp-sys
+          for t in gui_smoke gui_regress gui_037; do
+            XDG_CONFIG_HOME=/tmp/c-$t XDG_STATE_HOME=/tmp/s-$t xvfb-run -a dbus-run-session -- python3 tests/$t.py
+          done
+      - name: Construir el paquete .deb
+        run: packaging/build-deb.sh
+      - name: Instalar el paquete
+        run: |
+          sudo apt-get install -y ./dist/sensorpulse_*_all.deb
+          SENSORPULSE_SYSROOT=/tmp/sp-sys sensorpulse status
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sensorpulse-deb
+          path: dist/*.deb
+      - name: Adjuntar el .deb a la versión publicada
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${GITHUB_REF_NAME}" dist/*.deb --clobber || gh release create "${GITHUB_REF_NAME}" dist/*.deb --title "SensorPulse ${GITHUB_REF_NAME#v}" --notes-file CHANGELOG.md

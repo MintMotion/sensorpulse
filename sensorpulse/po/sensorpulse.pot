@@ -1,0 +1,1548 @@
+# SensorPulse translation template
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#: sensorpulse/service.py:898
+msgid "%(name)s has dropped to %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr ""
+
+#: sensorpulse/service.py:896
+msgid "%(name)s has reached %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr ""
+
+#: sensorpulse/service.py:885
+msgid "%(name)s has stopped while %(ref)s is at %(value).0f%(unit)s."
+msgstr ""
+
+#: sensorpulse/service.py:878
+msgid "%(name)s is at %(value).0f%(unit)s while the computer is almost idle (%(load).0f%% load). Make sure the air vents are not blocked."
+msgstr ""
+
+#: sensorpulse/service.py:868
+msgid "%(name)s is at its limit (%(value).0f%(unit)s) and has to slow down a lot to protect itself. Make sure the air vents are not blocked and the fans are working."
+msgstr ""
+
+#: sensorpulse/service.py:973
+msgid "%(name)s is back to %(value)s%(unit)s."
+msgstr ""
+
+#: sensorpulse/service.py:873
+msgid "%(name)s is reducing its speed to protect itself from heat (%(value).0f%(unit)s)."
+msgstr ""
+
+#: sensorpulse/service.py:1026
+msgid "%d custom alarm rule(s) were invalid and have been ignored."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:595
+msgid "%d min"
+msgstr ""
+
+#: sensorpulse/app.py:80
+msgid "%s cannot be read (check its permissions). The last good copy or the defaults are being used, and the file will not be overwritten."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:749
+msgid "%s could not be uninstalled. Another program may be installing updates: try again in a few minutes."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:105
+msgid "%s settings"
+msgstr ""
+
+#: sensorpulse/cli.py:93
+msgid "--days must be between 0 and 3650"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:336
+msgid "0 RPM at start: maybe nothing connected"
+msgstr ""
+
+#: sensorpulse/ui/window.py:260
+msgid "1 hour"
+msgstr ""
+
+#: sensorpulse/ui/window.py:260
+msgid "10 min"
+msgstr ""
+
+#: sensorpulse/ui/window.py:260
+msgid "24 hours"
+msgstr ""
+
+#: sensorpulse/ui/window.py:261
+msgid "30 days"
+msgstr ""
+
+#: sensorpulse/ui/window.py:261
+msgid "7 days"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:101
+msgid "A long interval lets the disk rest (spin down), but a disk could heat up between two readings without the alarm going off. A short interval watches it closely, but on many disks each reading stops them from going to sleep."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:478
+msgid "A sign that the air vents may be blocked or the cooling is not working well."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:213
+msgid "A very soft glow whose color follows the state of your computer."
+msgstr ""
+
+#: sensorpulse/ui/disks.py:113
+msgid "A warm disk is working, so reading it more often does not take away its rest. With the disk service (UDisks2), a disk that is asleep is not woken up to read it."
+msgstr ""
+
+#: sensorpulse/core/discovery.py:308
+msgid "ACPI zone"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:123
+msgid "ACPI zone %s"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:121
+msgid "About"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:220
+msgid "Accent color"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:403
+msgid "Activates the motherboard and disk sensors that are not loaded. Your password will be asked once."
+msgstr ""
+
+#: sensorpulse/ui/window.py:661
+msgid "Add or hide sensors"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:617
+msgid "Alarm"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:22
+msgid "Alarm clock"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:488
+msgid "Alarm sound"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:120
+msgid "Alarms"
+msgstr ""
+
+#: sensorpulse/ui/window.py:306
+msgid "Alarms for this sensor…"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:155
+msgid "All good"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:591
+msgid "All set"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:734
+msgid "Also delete my settings and alarms"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:480
+msgid "Also warn when something is hot (not only critical)"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:494
+msgid "Always on top"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:234
+msgid "Animate fan icons"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:715
+msgid "Anonymous summary of your sensors to paste in a forum or a bug report. It does not include your name, computer name or serial numbers."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:172
+msgid "Appearance"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:267
+msgid "Assistant"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:28
+msgid "Attention"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:156
+msgid "Attention!"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:212
+msgid "Aurora background"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:236
+msgid "Automatic"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:202
+msgid "Automatic (CPU)"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:475
+msgid "Automatic alarms"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:504
+msgid "Avoids false alarms from short peaks."
+msgstr ""
+
+#: sensorpulse/ui/window.py:273
+msgid "Back"
+msgstr ""
+
+#: sensorpulse/service.py:972
+msgid "Back to normal"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:395
+msgid "Back to recommended"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:35
+msgid "Bars"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:516
+msgid "Battery"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:25
+msgid "Bell"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:196
+msgid "Bento (one large card)"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:481
+msgid "Blink when an alarm is active"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:553
+msgid "Busiest cores"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:94
+msgid "CCD %s"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:98
+msgid "CPU"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:92
+msgid "CPU (control)"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:560
+msgid "CPU clock"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:90
+msgid "CPU die"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:550
+msgid "CPU load"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:85
+msgid "CPU package"
+msgstr ""
+
+#: sensorpulse/ui/draw.py:106
+msgid "CRITICAL"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:171
+msgid "Cancel"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:313
+msgid "Cards with all your sensors, always at hand"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:522
+msgid "Charge"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:535
+msgid "Charge cycles"
+msgstr ""
+
+#: sensorpulse/ui/window.py:505
+msgid "Chart of %(name)s: min %(min)s, max %(max)s, now %(now)s"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:24
+msgid "Chime"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:380
+msgid "Choose a style"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:318
+msgid "Choose what is shown and where. Double-click a name to rename it."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:197
+msgid "Classic (all the same size)"
+msgstr ""
+
+#: sensorpulse/ui/window.py:67
+msgid "Click for details"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:495
+msgid "Click-through when locked"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:378
+msgid "Clock %s"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:134
+msgid "Close"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:34
+msgid "Cockpit"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:675
+msgid "Color and blinking"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:230
+msgid "Color-blind friendly colors"
+msgstr ""
+
+#: sensorpulse/service.py:867
+msgid "Cooling problem"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:726
+msgid "Copied to the clipboard."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:713
+msgid "Copy hardware report"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:87
+msgid "Core %s"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:96
+msgid "Core sensor %s"
+msgstr ""
+
+#: sensorpulse/cli.py:53
+msgid "Critical"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:671
+msgid "Critical (always interrupts)"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:488
+msgid "Critical alarms. ▶ plays it."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:188
+msgid "Dark"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:189
+msgid "Deep dark"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:508
+msgid "Degrees it must drop before alarming again"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:535
+msgid "Desktop notification"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:482
+msgid "Desktop notifications"
+msgstr ""
+
+#: sensorpulse/service.py:851
+msgid "Details"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:402
+msgid "Detect sensors…"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:19
+msgid "Digital beeps"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:23
+msgid "Disk"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:23
+msgid "Disk of unknown type (treated as a hard disk)"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:561
+msgid "Disk temperature"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:255
+msgid "Disks"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:381
+msgid "Drag to move · right-click for options"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:29
+msgid "Error tone"
+msgstr ""
+
+#: sensorpulse/ui/window.py:323
+msgid "Export history"
+msgstr ""
+
+#: sensorpulse/ui/window.py:287
+msgid "Export…"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:357
+msgid "Fan %s"
+msgstr ""
+
+#: sensorpulse/service.py:884
+msgid "Fan stopped"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:580
+msgid "Fans"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:189
+msgid "Finish"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:377
+msgid "Floating"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:158
+msgid "Floating on the desktop"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:179
+msgid "Floating widget style"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:667
+msgid "For at least (seconds)"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:34
+msgid "Futuristic HUD"
+msgstr ""
+
+#: sensorpulse/ui/envinfo.py:341
+msgid "GNOME needs the “AppIndicator” extension to show icons in the top bar (Ubuntu already includes it)."
+msgstr ""
+
+#: sensorpulse/core/discovery.py:107
+msgid "GPU"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:287
+msgid "GPU %s"
+msgstr ""
+
+#: sensorpulse/core/nvml.py:212
+msgid "GPU NVIDIA"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:357
+msgid "GPU fan"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:103
+msgid "GPU hotspot"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:390
+msgid "GPU load"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:105
+msgid "GPU memory"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:367
+msgid "GPU power"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:113
+msgid "GPU sensor %s"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:288
+msgid "Gauges (like the desktop widget)"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:118
+msgid "General"
+msgstr ""
+
+#: sensorpulse/ui/rename.py:53
+msgid "Give it a name of your own, for example «Motherboard» or «Exhaust fan». Leave it empty to use the original name."
+msgstr ""
+
+#: sensorpulse/ui/floating.py:35
+msgid "Glass"
+msgstr ""
+
+#: sensorpulse/service.py:853
+msgid "Got it"
+msgstr ""
+
+#: sensorpulse/ui/draw.py:110
+msgid "HOT"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:22
+msgid "Hard disk"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:83
+msgid "Hard disk reading interval"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:528
+msgid "Health"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:548
+msgid "Hide floating widget"
+msgstr ""
+
+#: sensorpulse/cli.py:53
+msgid "High"
+msgstr ""
+
+#: sensorpulse/service.py:672
+msgid "History is not being saved"
+msgstr ""
+
+#: sensorpulse/cli.py:87
+msgid "History of a sensor (CSV by default)."
+msgstr ""
+
+#: sensorpulse/ui/detect.py:138
+msgid "I have found %d new sensors. Which ones do you want to see?"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:284
+msgid "If you choose more sensors for the panel, the rest appear when you click it. Choose which ones in «Sensors»."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:157
+msgid "In a window"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:157
+msgid "In the panel"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:30
+msgid "Information"
+msgstr ""
+
+#: sensorpulse/service.py:630
+msgid "Internal error; monitoring continues."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:711
+msgid "It only reads sensors: it never changes fans or hardware settings."
+msgstr ""
+
+#: sensorpulse/cli.py:90
+msgid "JSON output instead of CSV"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:242
+msgid "Language"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:514
+msgid "Large"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:208
+msgid "Large card"
+msgstr ""
+
+#: sensorpulse/ui/window.py:705
+msgid "Last reading %d s ago"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:226
+msgid "Let's get your sensor monitor ready in one minute. Nothing needs to be configured by hand."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:673
+msgid "Level"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:709
+msgid "License: %s · Free and open source software"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:190
+msgid "Light"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:61
+msgid "Listen"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:381
+msgid "Live preview with your real data. Values move smoothly and change color as temperatures rise."
+msgstr ""
+
+#: sensorpulse/ui/floating.py:493
+msgid "Lock position"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:380
+msgid "Locked"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:364
+msgid "Look"
+msgstr ""
+
+#: sensorpulse/ui/window.py:152
+msgid "Measured every 30 s to save battery"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:514
+msgid "Medium"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:569
+msgid "Memory"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:27
+msgid "Message"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:35
+msgid "Minimal"
+msgstr ""
+
+#: sensorpulse/views.py:226
+msgid "More values"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:312
+msgid "Motherboard"
+msgstr ""
+
+#: sensorpulse/service.py:850
+msgid "Mute 1 hour"
+msgstr ""
+
+#: sensorpulse/ui/window.py:531
+msgid "Mute alarms"
+msgstr ""
+
+#: sensorpulse/views.py:225
+msgid "Mute alarms for 1 hour"
+msgstr ""
+
+#: sensorpulse/ui/window.py:535
+msgid "Mute for 1 hour"
+msgstr ""
+
+#: sensorpulse/ui/window.py:535
+msgid "Mute for 15 minutes"
+msgstr ""
+
+#: sensorpulse/ui/window.py:536
+msgid "Mute until tomorrow"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:510
+msgid "My alarms"
+msgstr ""
+
+#: sensorpulse/ui/draw.py:112
+msgid "NORMAL"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:22
+msgid "NVMe SSD"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:447
+msgid "Name"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:287
+msgid "Name and number"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:372
+msgid "Names"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:249
+msgid "Needed for alarms to work when the window is closed."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:514
+msgid "New alarm"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:133
+msgid "New sensors"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:107
+msgid "New sensors activated: %s."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:156
+msgid "Next"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:312
+msgid "Next to the clock and the other icons"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:598
+msgid "No alarms so far."
+msgstr ""
+
+#: sensorpulse/ui/disks.py:76
+msgid "No disk with a temperature sensor was found."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:265
+msgid "No fan speeds found: many laptops do not publish them for Linux. Temperatures will still be monitored."
+msgstr ""
+
+#: sensorpulse/ui/detect.py:123
+msgid "No new sensors were found. Everything your computer offers is already being shown."
+msgstr ""
+
+#: sensorpulse/cli.py:53
+msgid "Normal"
+msgstr ""
+
+#: sensorpulse/service.py:859
+msgid "Not again today"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:386
+msgid "Note"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:675
+msgid "Notification"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:376
+msgid "Now"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:17
+msgid "Nuclear plant alarm"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:34
+msgid "OLED minimal"
+msgstr ""
+
+#: sensorpulse/ui/envinfo.py:350
+msgid "On Cinnamon (Wayland) the widget may not stay behind your windows; use “Always on top” or the X11 session if needed."
+msgstr ""
+
+#: sensorpulse/ui/envinfo.py:344
+msgid "On GNOME (Wayland) the floating widget is shown as a normal window: GNOME does not let apps place widgets on the desktop."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:377
+msgid "On click"
+msgstr ""
+
+#: sensorpulse/views.py:224
+msgid "Open window"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:462
+msgid "Original name: %s"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:278
+msgid "Panel"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:292
+msgid "Panel look"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:320
+msgid "Panel: next to the clock. On click: only in the list that opens when you click the panel. Floating: the desktop widget."
+msgstr ""
+
+#: sensorpulse/core/discovery.py:367
+msgid "Power"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:525
+msgid "Power draw"
+msgstr ""
+
+#: sensorpulse/ui/tray.py:175
+msgid "Quit"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:121
+msgid "RAM"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:573
+msgid "RAM in use"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:259
+msgid "Read hard disk temperatures"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:523
+msgid "Recent alarms"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:513
+msgid "Recommended limits are read from your hardware. You can add your own alarms (for example, at 75 °C) later in Settings."
+msgstr ""
+
+#: sensorpulse/ui/window.py:702
+msgid "Reconnecting to the sensor service…"
+msgstr ""
+
+#: sensorpulse/ui/window.py:150
+msgid "Reducing speed because of heat"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:254
+msgid "Refresh every (seconds)"
+msgstr ""
+
+#: sensorpulse/views.py:226
+msgid "Rename a sensor…"
+msgstr ""
+
+#: sensorpulse/ui/rename.py:36
+msgid "Rename sensor"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:531
+msgid "Rename «%s»…"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:676
+msgid "Repeat the sound"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:484
+msgid "Repeat the sound every 2 minutes while the alarm lasts"
+msgstr ""
+
+#: sensorpulse/ui/window.py:291
+msgid "Reset min/max"
+msgstr ""
+
+#: sensorpulse/ui/window.py:700
+msgid "Restart SensorPulse"
+msgstr ""
+
+#: sensorpulse/ui/window.py:702
+msgid "Restart the service"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:156
+msgid "Resting"
+msgstr ""
+
+#: sensorpulse/ui/window.py:148
+msgid "Resting (not woken up to save power)"
+msgstr ""
+
+#: sensorpulse/ui/window.py:146
+msgid "Resting · measured every 30 s to save battery"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:26
+msgid "Ring"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:35
+msgid "Rings"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:268
+msgid "Run the welcome assistant again"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:22
+msgid "SATA SSD"
+msgstr ""
+
+#: sensorpulse/ui/draw.py:108
+msgid "SLOWING DOWN"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:116
+msgid "SSD"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:117
+msgid "SSD sensor %s"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:187
+msgid "Same as the system"
+msgstr ""
+
+#: sensorpulse/ui/rename.py:44
+msgid "Save"
+msgstr ""
+
+#: sensorpulse/ui/window.py:288
+msgid "Save the history of this sensor as CSV or JSON"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:398
+msgid "Search for new sensors"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:372
+msgid "Sensor"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:706
+msgid "Sensor monitor for Debian, Ubuntu, Linux Mint and derivatives."
+msgstr ""
+
+#: sensorpulse/ui/window.py:700
+msgid "SensorPulse has been updated."
+msgstr ""
+
+#: sensorpulse/ui/floating.py:192
+msgid "Sensors"
+msgstr ""
+
+#: sensorpulse/views.py:224
+msgid "Settings"
+msgstr ""
+
+#: sensorpulse/app.py:79
+msgid "Settings could not be read"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:377
+msgid "Show"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:134
+msgid "Show selected"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:296
+msgid "Show the names in the panel"
+msgstr ""
+
+#: sensorpulse/ui/tray.py:171
+msgid "Show/hide floating widget"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:495
+msgid "Shows a test notification and plays the alarm sound."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:282
+msgid "Shows the temperatures in the panel and warns you only when it matters. Or press “Start” to choose everything yourself."
+msgstr ""
+
+#: sensorpulse/ui/floating.py:511
+msgid "Size"
+msgstr ""
+
+#: sensorpulse/service.py:872
+msgid "Slowing down because of heat"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:514
+msgid "Small"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:21
+msgid "Soft beep"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:20
+msgid "Soft chime"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:489
+msgid "Soft sound for warnings"
+msgstr ""
+
+#: sensorpulse/service.py:1025
+msgid "Some alarm rules were ignored"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:155
+msgid "Something is hot"
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:18
+msgid "Sonar ping"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:483
+msgid "Sound"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:539
+msgid "Sound alarm"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:189
+msgid "Start"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:248
+msgid "Start with the computer"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:531
+msgid "Status"
+msgstr ""
+
+#: sensorpulse/ui/floating.py:500
+msgid "Style"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:244
+msgid "System"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:124
+msgid "Temperature %s"
+msgstr ""
+
+#: sensorpulse/service.py:899
+msgid "Temperature alarm"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:226
+msgid "Temperature unit"
+msgstr ""
+
+#: sensorpulse/service.py:470
+msgid "Test alarm"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:348
+msgid "The panel shows a few values next to the clock, and clicking it shows the rest. The desktop widget shows larger gauges. On the next pages you choose which sensors go to each place and you can give them names of your own."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:242
+msgid "The program restarts to apply the new language."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:733
+msgid "The program will be removed. Your password will be requested."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:426
+msgid "The recommended sensors are already selected. Panel: next to the clock. On click: only in the list that opens when you click the panel. Widget: the floating desktop widget. Type a name of your own if you like (for example «Motherboard» instead of «diode 0»)."
+msgstr ""
+
+#: sensorpulse/service.py:673
+msgid "The sensor history could not be written (%s). Alarms keep working."
+msgstr ""
+
+#: sensorpulse/app.py:62
+msgid "The sensor service could not be started."
+msgstr ""
+
+#: sensorpulse/ui/detect.py:104
+msgid "The sensors could not be activated."
+msgstr ""
+
+#: sensorpulse/ui/store.py:392
+msgid "The settings could not be saved (%s)."
+msgstr ""
+
+#: sensorpulse/app.py:86
+msgid "The settings file was damaged. It was saved as %s and the last good copy or the defaults are being used."
+msgstr ""
+
+#: sensorpulse/ui/detect.py:120
+msgid "The system does not include drivers for these sensors (this is normal in virtual machines and some cloud kernels)."
+msgstr ""
+
+#: sensorpulse/ui/envinfo.py:338
+msgid "The values will appear in the top bar. The first time, you may need to log out and back in."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:485
+msgid "The volume rises little by little. «Got it» in the notification stops it."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:193
+msgid "Theme"
+msgstr ""
+
+#: sensorpulse/core/discovery.py:484
+msgid "Thermal zone"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:108
+msgid "They will stay active after restarting."
+msgstr ""
+
+#: sensorpulse/ui/detect.py:98
+msgid "This computer does not expose physical sensors (this is normal in virtual machines)."
+msgstr ""
+
+#: sensorpulse/ui/detect.py:92
+msgid "This computer is a laptop. Laptops rarely have motherboard sensors, and testing for them can freeze some models. Try anyway?"
+msgstr ""
+
+#: sensorpulse/service.py:470
+msgid "This is how an alarm will look and sound."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:669
+msgid "This is normal under load"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:228
+msgid "This is what I found on your computer:"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:55
+msgid "This option is not available on this system."
+msgstr ""
+
+#: sensorpulse/service.py:876
+msgid "Too hot for the workload"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:315
+msgid "Transparent; place it anywhere with the mouse"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:171
+msgid "Try anyway"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:297
+msgid "Turn it off to fit more values in less space."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:260
+msgid "Turn this off if your disks must never be woken up: without the disk service (UDisks2) the program cannot tell whether a disk is asleep."
+msgstr ""
+
+#: sensorpulse/ui/sounds.py:16
+msgid "Two-tone alarm"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:737
+msgid "Uninstall"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:732
+msgid "Uninstall %s?"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:271
+msgid "Uninstall %s…"
+msgstr ""
+
+#: sensorpulse/ui/window.py:536
+msgid "Unmute"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:278
+msgid "Use recommended settings and finish"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:467
+msgid "Use the limits recommended by your hardware."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:358
+msgid "Values in the panel"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:283
+msgid "Values shown in the panel"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:704
+msgid "Version"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:534
+msgid "Visual alarm (color and blinking)"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:503
+msgid "Wait before alarming (seconds)"
+msgstr ""
+
+#: sensorpulse/views.py:225
+msgid "Waiting for data…"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:533
+msgid "Warn me if something gets too hot"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:479
+msgid "Warn when a fan stops"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:477
+msgid "Warn when it gets hot while almost idle"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:476
+msgid "Warn when the CPU or GPU slows down because of heat"
+msgstr ""
+
+#: sensorpulse/service.py:899
+msgid "Warning"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:670
+msgid "Warning (it waits if you are busy)"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:493
+msgid "Warning sound"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:519
+msgid "Warnings only show a notification; critical alarms also play the sound. During games or full-screen videos only critical alarms interrupt."
+msgstr ""
+
+#: sensorpulse/ui/disks.py:105
+msgid "Watch a hard disk every 2 minutes while it is warm"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:225
+msgid "Welcome"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:141
+msgid "Welcome to %s"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:425
+msgid "What do you want to monitor, and where?"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:647
+msgid "When it"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:307
+msgid "Where do you want to see your sensors?"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:156
+msgid "Where to show the sensors"
+msgstr ""
+
+#: sensorpulse/service.py:833
+msgid "While you were busy"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:447
+msgid "Widget"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:200
+msgid "Window layout"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:308
+msgid "You can choose more than one. You can change this at any time."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:534
+msgid "You have no alarms of your own yet."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:580
+msgid "Your %(model)s is designed to work up to %(tj).0f%(unit)s under load. You will be warned if it goes beyond that, if it slows down because of heat or if it gets hot while doing almost nothing."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:585
+msgid "Your %(model)s will raise an alarm at %(crit).0f%(unit)s."
+msgstr ""
+
+#: sensorpulse/ui/envinfo.py:347
+msgid "Your desktop has transparency turned off; the widget will have a solid background. You can enable the compositor in your desktop settings."
+msgstr ""
+
+#: sensorpulse/ui/detect.py:116
+msgid "Your motherboard reserves its sensor chip for its own use, so it cannot be activated safely."
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:592
+msgid "Your sensors are being watched. You will only be warned when it matters."
+msgstr ""
+
+#: sensorpulse/ui/settings.py:541
+msgid "above"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:333
+msgid "advanced reading"
+msgstr ""
+
+#: sensorpulse/views.py:78
+msgid "alarms muted until %s"
+msgstr ""
+
+#: sensorpulse/cli.py:54
+msgid "asleep"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:541
+msgid "below"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:235
+msgid "clock"
+msgstr ""
+
+#: sensorpulse/ui/window.py:223
+msgid "collecting data…"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:542
+msgid "color"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:334
+msgid "control value with offset (not the real temperature)"
+msgstr ""
+
+#: sensorpulse/views.py:228
+msgid "critical"
+msgstr ""
+
+#: sensorpulse/cli.py:89
+msgid "days back (default 1)"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:262
+msgid "disk temperature can be enabled later (optional)"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:639
+msgid "drops below"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:333
+msgid "duplicate of the main sensor"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:32
+msgid "every %d h"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:31
+msgid "every %d min"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:29
+msgid "every %d s"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:85
+msgid "every 10 min"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:86
+msgid "every 15 min"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:87
+msgid "every 2 hours"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:85
+msgid "every 2 min (watch closely)"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:86
+msgid "every 30 min (let them rest)"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:85
+msgid "every 5 min"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:87
+msgid "every hour"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:577
+msgid "fan stopped"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:234
+msgid "fans"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:335
+msgid "generic firmware zone"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:638
+msgid "goes above"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:20
+msgid "hard disks"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:363
+msgid "hidden by default"
+msgstr ""
+
+#: sensorpulse/views.py:227
+msgid "high"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:576
+msgid "hot while idle"
+msgstr ""
+
+#: sensorpulse/ui/window.py:219
+msgid "min %s · max %s"
+msgstr ""
+
+#: sensorpulse/ui/detect.py:16
+msgid "motherboard"
+msgstr ""
+
+#: sensorpulse/views.py:227
+msgid "normal"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:632
+msgid "not available"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:542
+msgid "notification"
+msgstr ""
+
+#: sensorpulse/ui/window.py:496
+msgid "now"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:235
+msgid "power"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:67
+msgid "read %s (you decide below)"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:65
+msgid "read %s: it does not affect its rest or its lifespan"
+msgstr ""
+
+#: sensorpulse/cli.py:88
+msgid "sensor identifier (see “sensorpulse status --json”)"
+msgstr ""
+
+#: sensorpulse/views.py:228
+msgid "slowing down"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:576
+msgid "slowing down because of heat"
+msgstr ""
+
+#: sensorpulse/ui/settings.py:543
+msgid "sound"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:234
+msgid "temperature"
+msgstr ""
+
+#: sensorpulse/cli.py:96
+msgid "the service is not available"
+msgstr ""
+
+#: sensorpulse/cli.py:101
+msgid "there is no sensor “%s”"
+msgstr ""
+
+#: sensorpulse/ui/wizard.py:234
+msgid "usage"
+msgstr ""
+
+#: sensorpulse/ui/disks.py:69
+msgid "warm: watched every 2 min until it cools down"
+msgstr ""
+
+#: sensorpulse/ui/window.py:490
+msgid "−%d days"
+msgstr ""
+
+#: sensorpulse/ui/window.py:492
+msgid "−%d h"
+msgstr ""
+
+#: sensorpulse/ui/window.py:494
+msgid "−%d min"
+msgstr ""

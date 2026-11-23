@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=io.github.mintmotion.SensorPulse
+Exec=/usr/bin/sensorpulse-service
+SystemdService=sensorpulse.service

@@ -1,0 +1,4 @@
+#!/bin/sh
+# SensorPulse — desinstalación completa (se ejecuta como root con pkexec, con su propia
+# política de polkit: «Desinstalar SensorPulse»). Espera hasta 2 minutos si apt está ocupado.
+exec /usr/bin/apt-get -o DPkg::Lock::Timeout=120 purge -y sensorpulse

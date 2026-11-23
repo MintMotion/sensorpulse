@@ -1,0 +1,32 @@
+[Unit]
+Description=SensorPulse sensor service (reads sensors, alarms)
+Documentation=https://github.com/MintMotion/sensorpulse
+PartOf=graphical-session.target
+After=graphical-session.target
+StartLimitIntervalSec=120
+StartLimitBurst=10
+
+[Service]
+Type=dbus
+BusName=io.github.mintmotion.SensorPulse
+ExecStart=/usr/bin/sensorpulse-service
+# Siempre se vuelve a arrancar (también tras una salida «limpia» provocada por otro proceso);
+# para pararlo a propósito: systemctl --user stop sensorpulse
+Restart=always
+RestartSec=3
+# El servicio manda un latido mientras sus lecturas son recientes; si se atasca, systemd lo reinicia
+WatchdogSec=90
+NotifyAccess=main
+Nice=5
+IOSchedulingClass=idle
+# Endurecimiento que NO necesita espacios de nombres (funciona también en kernels que los
+# desactivan para usuarios sin privilegios, p. ej. Debian antiguo)
+NoNewPrivileges=yes
+LockPersonality=yes
+RestrictRealtime=yes
+RestrictAddressFamilies=AF_UNIX AF_NETLINK
+SystemCallArchitectures=native
+UMask=0077
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,9 @@
+{
+    "uuid": "sensorpulse@mintmotion",
+    "name": "SensorPulse",
+    "description": "Temperatures in the panel with alarm colors (needs the SensorPulse program)",
+    "icon": "sensorpulse",
+    "max-instances": 1,
+    "version": "0.3.8",
+    "author": "SensorPulse"
+}

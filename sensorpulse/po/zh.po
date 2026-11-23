@@ -1,0 +1,1165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sensorpulse\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%(name)s has dropped to %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr "%(name)s 已降至 %(value)s%(unit)s（限值 %(limit)s%(unit)s）。"
+
+msgid "%(name)s has reached %(value)s%(unit)s (limit %(limit)s%(unit)s)."
+msgstr "%(name)s 已达到 %(value)s%(unit)s（限值 %(limit)s%(unit)s）。"
+
+msgid "%(name)s has stopped while %(ref)s is at %(value).0f%(unit)s."
+msgstr "%(ref)s 为 %(value).0f%(unit)s 时 %(name)s 停止了。"
+
+msgid "%(name)s is at %(value).0f%(unit)s while the computer is almost idle (%(load).0f%% load). Make sure the air vents are not blocked."
+msgstr "电脑几乎空闲（负载 %(load).0f%%），%(name)s 却达到 %(value).0f%(unit)s。请检查通风口是否被堵住。"
+
+msgid "%(name)s is at its limit (%(value).0f%(unit)s) and has to slow down a lot to protect itself. Make sure the air vents are not blocked and the fans are working."
+msgstr "%(name)s 已达到极限（%(value).0f%(unit)s），不得不大幅降速自我保护。请检查通风口是否被堵住、风扇是否正常运转。"
+
+msgid "%(name)s is back to %(value)s%(unit)s."
+msgstr "%(name)s 已恢复到 %(value)s%(unit)s。"
+
+msgid "%(name)s is reducing its speed to protect itself from heat (%(value).0f%(unit)s)."
+msgstr "%(name)s 正在降低速度以防止过热（%(value).0f%(unit)s）。"
+
+msgid "%d custom alarm rule(s) were invalid and have been ignored."
+msgstr "有 %d 条自定义警报规则无效，已被忽略。"
+
+msgid "%d min"
+msgstr "%d 分钟"
+
+msgid "%s cannot be read (check its permissions). The last good copy or the defaults are being used, and the file will not be overwritten."
+msgstr "无法读取 %s（请检查其权限）。正在使用上一个正常的副本或默认值，且不会覆盖该文件。"
+
+msgid "%s could not be uninstalled. Another program may be installing updates: try again in a few minutes."
+msgstr "无法卸载 %s。可能有其他程序正在安装更新，请几分钟后再试。"
+
+msgid "%s settings"
+msgstr "%s 设置"
+
+msgid "--days must be between 0 and 3650"
+msgstr "--days 必须介于 0 和 3650 之间"
+
+msgid "0 RPM at start: maybe nothing connected"
+msgstr "启动时 0 RPM：可能未连接"
+
+msgid "1 hour"
+msgstr "1 小时"
+
+msgid "10 min"
+msgstr "10 分钟"
+
+msgid "24 hours"
+msgstr "24 小时"
+
+msgid "30 days"
+msgstr "30 天"
+
+msgid "7 days"
+msgstr "7 天"
+
+msgid "A long interval lets the disk rest (spin down), but a disk could heat up between two readings without the alarm going off. A short interval watches it closely, but on many disks each reading stops them from going to sleep."
+msgstr "间隔较长可以让磁盘休息（停转），但两次读取之间磁盘可能升温而不触发警报。间隔较短可以密切监视，但在许多磁盘上每次读取都会使其无法进入休眠。"
+
+msgid "A sign that the air vents may be blocked or the cooling is not working well."
+msgstr "可能是通风口被堵住或散热工作不正常。"
+
+msgid "A very soft glow whose color follows the state of your computer."
+msgstr "颜色随电脑状态变化的柔和光晕。"
+
+msgid "A warm disk is working, so reading it more often does not take away its rest. With the disk service (UDisks2), a disk that is asleep is not woken up to read it."
+msgstr "温度偏高的磁盘正在工作，因此更频繁地读取并不会影响其休息。有磁盘服务（UDisks2）时，休眠中的磁盘不会为读取而被唤醒。"
+
+msgid "ACPI zone"
+msgstr "ACPI 区域"
+
+msgid "ACPI zone %s"
+msgstr "ACPI 区域 %s"
+
+msgid "About"
+msgstr "关于"
+
+msgid "Accent color"
+msgstr "强调色"
+
+msgid "Activates the motherboard and disk sensors that are not loaded. Your password will be asked once."
+msgstr "启用尚未加载的主板和磁盘传感器。只会询问一次密码。"
+
+msgid "Add or hide sensors"
+msgstr "添加或隐藏传感器"
+
+msgid "Alarm"
+msgstr "警报"
+
+msgid "Alarm clock"
+msgstr "闹钟"
+
+msgid "Alarm sound"
+msgstr "警报声音"
+
+msgid "Alarms"
+msgstr "警报"
+
+msgid "Alarms for this sensor…"
+msgstr "此传感器的警报…"
+
+msgid "All good"
+msgstr "一切正常"
+
+msgid "All set"
+msgstr "一切就绪"
+
+msgid "Also delete my settings and alarms"
+msgstr "同时删除我的设置和警报"
+
+msgid "Also warn when something is hot (not only critical)"
+msgstr "温度偏高时也提醒（不仅限于危险时）"
+
+msgid "Always on top"
+msgstr "总在最前"
+
+msgid "Animate fan icons"
+msgstr "风扇图标动画"
+
+msgid "Anonymous summary of your sensors to paste in a forum or a bug report. It does not include your name, computer name or serial numbers."
+msgstr "用于粘贴到论坛或错误报告的传感器匿名摘要。不包含你的姓名、计算机名或序列号。"
+
+msgid "Appearance"
+msgstr "外观"
+
+msgid "Assistant"
+msgstr "向导"
+
+msgid "Attention"
+msgstr "注意"
+
+msgid "Attention!"
+msgstr "注意！"
+
+msgid "Aurora background"
+msgstr "极光背景"
+
+msgid "Automatic"
+msgstr "自动"
+
+msgid "Automatic (CPU)"
+msgstr "自动（CPU）"
+
+msgid "Automatic alarms"
+msgstr "自动警报"
+
+msgid "Avoids false alarms from short peaks."
+msgstr "避免短暂峰值造成误报。"
+
+msgid "Back"
+msgstr "上一步"
+
+msgid "Back to normal"
+msgstr "已恢复正常"
+
+msgid "Back to recommended"
+msgstr "恢复推荐设置"
+
+msgid "Bars"
+msgstr "条形"
+
+msgid "Battery"
+msgstr "电池"
+
+msgid "Bell"
+msgstr "铃声"
+
+msgid "Bento (one large card)"
+msgstr "Bento（一张大卡片）"
+
+msgid "Blink when an alarm is active"
+msgstr "警报时闪烁"
+
+msgid "Busiest cores"
+msgstr "最繁忙的核心"
+
+msgid "CCD %s"
+msgstr "CCD %s"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "CPU (control)"
+msgstr "CPU（控制）"
+
+msgid "CPU clock"
+msgstr "CPU 频率"
+
+msgid "CPU die"
+msgstr "CPU（核心）"
+
+msgid "CPU load"
+msgstr "CPU 使用率"
+
+msgid "CPU package"
+msgstr "CPU（封装）"
+
+msgid "CRITICAL"
+msgstr "危险"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cards with all your sensors, always at hand"
+msgstr "以卡片展示所有传感器，随时查看"
+
+msgid "Charge"
+msgstr "电量"
+
+msgid "Charge cycles"
+msgstr "充电循环"
+
+msgid "Chart of %(name)s: min %(min)s, max %(max)s, now %(now)s"
+msgstr "%(name)s 图表：最低 %(min)s，最高 %(max)s，当前 %(now)s"
+
+msgid "Chime"
+msgstr "提示音"
+
+msgid "Choose a style"
+msgstr "选择样式"
+
+msgid "Choose what is shown and where. Double-click a name to rename it."
+msgstr "选择显示的内容和位置。双击名称可重命名。"
+
+msgid "Classic (all the same size)"
+msgstr "经典（大小相同）"
+
+msgid "Click for details"
+msgstr "点击查看详情"
+
+msgid "Click-through when locked"
+msgstr "锁定后允许点击穿透"
+
+msgid "Clock %s"
+msgstr "时钟 %s"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Cockpit"
+msgstr "驾驶舱"
+
+msgid "Color and blinking"
+msgstr "颜色和闪烁"
+
+msgid "Color-blind friendly colors"
+msgstr "色盲友好配色"
+
+msgid "Cooling problem"
+msgstr "散热问题"
+
+msgid "Copied to the clipboard."
+msgstr "已复制到剪贴板。"
+
+msgid "Copy hardware report"
+msgstr "复制硬件报告"
+
+msgid "Core %s"
+msgstr "核心 %s"
+
+msgid "Core sensor %s"
+msgstr "核心传感器 %s"
+
+msgid "Critical"
+msgstr "危险"
+
+msgid "Critical (always interrupts)"
+msgstr "严重（始终提醒）"
+
+msgid "Critical alarms. ▶ plays it."
+msgstr "用于危险警报。▶ 可试听。"
+
+msgid "Dark"
+msgstr "深色"
+
+msgid "Deep dark"
+msgstr "深黑"
+
+msgid "Degrees it must drop before alarming again"
+msgstr "再次警报前需下降的度数"
+
+msgid "Desktop notification"
+msgstr "桌面通知"
+
+msgid "Desktop notifications"
+msgstr "桌面通知"
+
+msgid "Details"
+msgstr "详情"
+
+msgid "Detect sensors…"
+msgstr "检测传感器…"
+
+msgid "Digital beeps"
+msgstr "数字蜂鸣"
+
+msgid "Disk"
+msgstr "磁盘"
+
+msgid "Disk of unknown type (treated as a hard disk)"
+msgstr "未知类型的磁盘（按机械硬盘处理）"
+
+msgid "Disk temperature"
+msgstr "磁盘温度"
+
+msgid "Disks"
+msgstr "磁盘"
+
+msgid "Drag to move · right-click for options"
+msgstr "拖动以移动 · 右键查看选项"
+
+msgid "Error tone"
+msgstr "错误提示音"
+
+msgid "Export history"
+msgstr "导出历史记录"
+
+msgid "Export…"
+msgstr "导出…"
+
+msgid "Fan %s"
+msgstr "风扇 %s"
+
+msgid "Fan stopped"
+msgstr "风扇停转"
+
+msgid "Fans"
+msgstr "风扇"
+
+msgid "Finish"
+msgstr "完成"
+
+msgid "Floating"
+msgstr "悬浮"
+
+msgid "Floating on the desktop"
+msgstr "悬浮在桌面上"
+
+msgid "Floating widget style"
+msgstr "悬浮小部件样式"
+
+msgid "For at least (seconds)"
+msgstr "持续至少（秒）"
+
+msgid "Futuristic HUD"
+msgstr "未来感 HUD"
+
+msgid "GNOME needs the “AppIndicator” extension to show icons in the top bar (Ubuntu already includes it)."
+msgstr "GNOME 需要 “AppIndicator” 扩展才能在顶栏显示图标（Ubuntu 已自带）。"
+
+msgid "GPU"
+msgstr "GPU"
+
+msgid "GPU %s"
+msgstr "GPU %s"
+
+msgid "GPU NVIDIA"
+msgstr "GPU NVIDIA"
+
+msgid "GPU fan"
+msgstr "GPU 风扇"
+
+msgid "GPU hotspot"
+msgstr "GPU（热点）"
+
+msgid "GPU load"
+msgstr "GPU 使用率"
+
+msgid "GPU memory"
+msgstr "GPU 显存"
+
+msgid "GPU power"
+msgstr "GPU 功耗"
+
+msgid "GPU sensor %s"
+msgstr "GPU 传感器 %s"
+
+msgid "Gauges (like the desktop widget)"
+msgstr "仪表（与桌面小部件相同）"
+
+msgid "General"
+msgstr "常规"
+
+msgid "Give it a name of your own, for example «Motherboard» or «Exhaust fan». Leave it empty to use the original name."
+msgstr "为它起一个自己的名字，例如“主板”或“排风扇”。留空则使用原始名称。"
+
+msgid "Glass"
+msgstr "玻璃"
+
+msgid "Got it"
+msgstr "知道了"
+
+msgid "HOT"
+msgstr "偏高"
+
+msgid "Hard disk"
+msgstr "机械硬盘"
+
+msgid "Hard disk reading interval"
+msgstr "机械硬盘读取间隔"
+
+msgid "Health"
+msgstr "健康度"
+
+msgid "Hide floating widget"
+msgstr "隐藏悬浮小部件"
+
+msgid "High"
+msgstr "偏高"
+
+msgid "History is not being saved"
+msgstr "历史记录未能保存"
+
+msgid "History of a sensor (CSV by default)."
+msgstr "传感器的历史记录（默认 CSV）。"
+
+msgid "I have found %d new sensors. Which ones do you want to see?"
+msgstr "发现了 %d 个新传感器。要显示哪些？"
+
+msgid "If you choose more sensors for the panel, the rest appear when you click it. Choose which ones in «Sensors»."
+msgstr "如果为面板选择了更多传感器，其余的会在点击面板时显示。在“传感器”中选择显示哪些。"
+
+msgid "In a window"
+msgstr "在窗口中"
+
+msgid "In the panel"
+msgstr "在面板中"
+
+msgid "Information"
+msgstr "信息"
+
+msgid "Internal error; monitoring continues."
+msgstr "内部错误；监控仍在继续。"
+
+msgid "It only reads sensors: it never changes fans or hardware settings."
+msgstr "它只读取传感器：从不更改风扇或硬件设置。"
+
+msgid "JSON output instead of CSV"
+msgstr "以 JSON 而非 CSV 输出"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Large"
+msgstr "大"
+
+msgid "Large card"
+msgstr "大卡片"
+
+msgid "Last reading %d s ago"
+msgstr "最后读数：%d 秒前"
+
+msgid "Let's get your sensor monitor ready in one minute. Nothing needs to be configured by hand."
+msgstr "一分钟内准备好你的传感器监视器，无需手动配置。"
+
+msgid "Level"
+msgstr "级别"
+
+msgid "License: %s · Free and open source software"
+msgstr "许可证：%s · 自由开源软件"
+
+msgid "Light"
+msgstr "浅色"
+
+msgid "Listen"
+msgstr "试听"
+
+msgid "Live preview with your real data. Values move smoothly and change color as temperatures rise."
+msgstr "使用真实数据实时预览。数值平滑变化，温度升高时颜色随之改变。"
+
+msgid "Lock position"
+msgstr "锁定位置"
+
+msgid "Locked"
+msgstr "已锁定"
+
+msgid "Look"
+msgstr "外观"
+
+msgid "Measured every 30 s to save battery"
+msgstr "每 30 秒测量一次以节省电量"
+
+msgid "Medium"
+msgstr "中"
+
+msgid "Memory"
+msgstr "内存"
+
+msgid "Message"
+msgstr "消息"
+
+msgid "Minimal"
+msgstr "极简"
+
+msgid "More values"
+msgstr "更多数值"
+
+msgid "Motherboard"
+msgstr "主板"
+
+msgid "Mute 1 hour"
+msgstr "静音 1 小时"
+
+msgid "Mute alarms"
+msgstr "静音警报"
+
+msgid "Mute alarms for 1 hour"
+msgstr "静音警报 1 小时"
+
+msgid "Mute for 1 hour"
+msgstr "静音 1 小时"
+
+msgid "Mute for 15 minutes"
+msgstr "静音 15 分钟"
+
+msgid "Mute until tomorrow"
+msgstr "静音到明天"
+
+msgid "My alarms"
+msgstr "我的警报"
+
+msgid "NORMAL"
+msgstr "正常"
+
+msgid "NVMe SSD"
+msgstr "NVMe 固态硬盘"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Name and number"
+msgstr "名称和数值"
+
+msgid "Names"
+msgstr "名称"
+
+msgid "Needed for alarms to work when the window is closed."
+msgstr "关闭窗口后警报仍能工作所必需。"
+
+msgid "New alarm"
+msgstr "新建警报"
+
+msgid "New sensors"
+msgstr "新传感器"
+
+msgid "New sensors activated: %s."
+msgstr "已启用新传感器：%s。"
+
+msgid "Next"
+msgstr "下一步"
+
+msgid "Next to the clock and the other icons"
+msgstr "在时钟和其他图标旁边"
+
+msgid "No alarms so far."
+msgstr "目前没有警报。"
+
+msgid "No disk with a temperature sensor was found."
+msgstr "未找到带温度传感器的磁盘。"
+
+msgid "No fan speeds found: many laptops do not publish them for Linux. Temperatures will still be monitored."
+msgstr "未找到风扇转速：许多笔记本电脑不向 Linux 提供此数据。温度仍会被监视。"
+
+msgid "No new sensors were found. Everything your computer offers is already being shown."
+msgstr "未发现新的传感器。电脑提供的所有数据都已显示。"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Not again today"
+msgstr "今天不再提醒"
+
+msgid "Note"
+msgstr "说明"
+
+msgid "Notification"
+msgstr "通知"
+
+msgid "Now"
+msgstr "当前"
+
+msgid "Nuclear plant alarm"
+msgstr "核电站警报"
+
+msgid "OLED minimal"
+msgstr "OLED 极简"
+
+msgid "On Cinnamon (Wayland) the widget may not stay behind your windows; use “Always on top” or the X11 session if needed."
+msgstr "在 Cinnamon（Wayland）中，小部件可能无法保持在窗口后方；如有需要，请使用“总在最前”或 X11 会话。"
+
+msgid "On GNOME (Wayland) the floating widget is shown as a normal window: GNOME does not let apps place widgets on the desktop."
+msgstr "在 GNOME（Wayland）中，悬浮小部件以普通窗口显示：GNOME 不允许应用在桌面上放置小部件。"
+
+msgid "On click"
+msgstr "点击时"
+
+msgid "Open window"
+msgstr "打开窗口"
+
+msgid "Original name: %s"
+msgstr "原始名称：%s"
+
+msgid "Panel"
+msgstr "面板"
+
+msgid "Panel look"
+msgstr "面板外观"
+
+msgid "Panel: next to the clock. On click: only in the list that opens when you click the panel. Floating: the desktop widget."
+msgstr "面板：时钟旁边。点击时：仅在点击面板后打开的列表中显示。悬浮：桌面小部件。"
+
+msgid "Power"
+msgstr "功率"
+
+msgid "Power draw"
+msgstr "功耗"
+
+msgid "Quit"
+msgstr "退出"
+
+msgid "RAM"
+msgstr "内存"
+
+msgid "RAM in use"
+msgstr "已用内存"
+
+msgid "Read hard disk temperatures"
+msgstr "读取硬盘温度"
+
+msgid "Recent alarms"
+msgstr "最近的警报"
+
+msgid "Recommended limits are read from your hardware. You can add your own alarms (for example, at 75 °C) later in Settings."
+msgstr "推荐限值读取自你的硬件。你可以稍后在设置中添加自己的警报（例如 75 °C）。"
+
+msgid "Reconnecting to the sensor service…"
+msgstr "正在重新连接传感器服务…"
+
+msgid "Reducing speed because of heat"
+msgstr "因过热正在降频"
+
+msgid "Refresh every (seconds)"
+msgstr "刷新间隔（秒）"
+
+msgid "Rename a sensor…"
+msgstr "重命名传感器…"
+
+msgid "Rename sensor"
+msgstr "重命名传感器"
+
+msgid "Rename «%s»…"
+msgstr "重命名“%s”…"
+
+msgid "Repeat the sound"
+msgstr "重复声音"
+
+msgid "Repeat the sound every 2 minutes while the alarm lasts"
+msgstr "警报持续期间每 2 分钟重复一次声音"
+
+msgid "Reset min/max"
+msgstr "重置最小/最大值"
+
+msgid "Restart SensorPulse"
+msgstr "重新启动 SensorPulse"
+
+msgid "Restart the service"
+msgstr "重启服务"
+
+msgid "Resting"
+msgstr "休眠中"
+
+msgid "Resting (not woken up to save power)"
+msgstr "休眠中（为省电不会唤醒）"
+
+msgid "Resting · measured every 30 s to save battery"
+msgstr "休眠中 · 每 30 秒测量一次以节省电量"
+
+msgid "Ring"
+msgstr "铃音"
+
+msgid "Rings"
+msgstr "圆环"
+
+msgid "Run the welcome assistant again"
+msgstr "再次运行欢迎向导"
+
+msgid "SATA SSD"
+msgstr "SATA 固态硬盘"
+
+msgid "SLOWING DOWN"
+msgstr "降频中"
+
+msgid "SSD"
+msgstr "SSD"
+
+msgid "SSD sensor %s"
+msgstr "SSD 传感器 %s"
+
+msgid "Same as the system"
+msgstr "跟随系统"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save the history of this sensor as CSV or JSON"
+msgstr "将此传感器的历史记录保存为 CSV 或 JSON"
+
+msgid "Search for new sensors"
+msgstr "搜索新传感器"
+
+msgid "Sensor"
+msgstr "传感器"
+
+msgid "Sensor monitor for Debian, Ubuntu, Linux Mint and derivatives."
+msgstr "适用于 Debian、Ubuntu、Linux Mint 及其衍生版的传感器监视器。"
+
+msgid "SensorPulse has been updated."
+msgstr "SensorPulse 已更新。"
+
+msgid "Sensors"
+msgstr "传感器"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Settings could not be read"
+msgstr "无法读取设置"
+
+msgid "Show"
+msgstr "显示"
+
+msgid "Show selected"
+msgstr "显示所选"
+
+msgid "Show the names in the panel"
+msgstr "在面板中显示名称"
+
+msgid "Show/hide floating widget"
+msgstr "显示/隐藏悬浮小部件"
+
+msgid "Shows a test notification and plays the alarm sound."
+msgstr "显示一条测试通知并播放警报声。"
+
+msgid "Shows the temperatures in the panel and warns you only when it matters. Or press “Start” to choose everything yourself."
+msgstr "在面板中显示温度，只在需要时提醒你。或者按“开始”自行选择所有设置。"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Slowing down because of heat"
+msgstr "因过热而降频"
+
+msgid "Small"
+msgstr "小"
+
+msgid "Soft beep"
+msgstr "柔和蜂鸣"
+
+msgid "Soft chime"
+msgstr "柔和铃声"
+
+msgid "Soft sound for warnings"
+msgstr "警告时播放柔和提示音"
+
+msgid "Some alarm rules were ignored"
+msgstr "部分警报规则已被忽略"
+
+msgid "Something is hot"
+msgstr "有部件温度偏高"
+
+msgid "Sonar ping"
+msgstr "声呐回声"
+
+msgid "Sound"
+msgstr "声音"
+
+msgid "Sound alarm"
+msgstr "声音警报"
+
+msgid "Start"
+msgstr "开始"
+
+msgid "Start with the computer"
+msgstr "开机时启动"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Style"
+msgstr "样式"
+
+msgid "System"
+msgstr "系统"
+
+msgid "Temperature %s"
+msgstr "温度 %s"
+
+msgid "Temperature alarm"
+msgstr "温度警报"
+
+msgid "Temperature unit"
+msgstr "温度单位"
+
+msgid "Test alarm"
+msgstr "测试警报"
+
+msgid "The panel shows a few values next to the clock, and clicking it shows the rest. The desktop widget shows larger gauges. On the next pages you choose which sensors go to each place and you can give them names of your own."
+msgstr "面板在时钟旁显示少量数值，点击后显示其余数值。桌面小部件显示更大的仪表。在接下来的页面中，你可以选择每个位置显示哪些传感器，并为它们起自己的名字。"
+
+msgid "The program restarts to apply the new language."
+msgstr "程序将重新启动以应用新语言。"
+
+msgid "The program will be removed. Your password will be requested."
+msgstr "将删除此程序，需要输入你的密码。"
+
+msgid "The recommended sensors are already selected. Panel: next to the clock. On click: only in the list that opens when you click the panel. Widget: the floating desktop widget. Type a name of your own if you like (for example «Motherboard» instead of «diode 0»)."
+msgstr "推荐的传感器已选中。面板：时钟旁边。点击时：仅在点击面板后打开的列表中显示。小部件：桌面悬浮小部件。你也可以输入自己的名字（例如用“主板”代替“diode 0”）。"
+
+msgid "The sensor history could not be written (%s). Alarms keep working."
+msgstr "无法写入传感器历史记录（%s）。警报仍在正常工作。"
+
+msgid "The sensor service could not be started."
+msgstr "无法启动传感器服务。"
+
+msgid "The sensors could not be activated."
+msgstr "无法启用传感器。"
+
+msgid "The settings could not be saved (%s)."
+msgstr "无法保存设置（%s）。"
+
+msgid "The settings file was damaged. It was saved as %s and the last good copy or the defaults are being used."
+msgstr "设置文件已损坏，已另存为 %s，并使用最近一次完好的副本或默认值。"
+
+msgid "The system does not include drivers for these sensors (this is normal in virtual machines and some cloud kernels)."
+msgstr "系统未包含这些传感器的驱动（在虚拟机和某些云内核中属于正常情况）。"
+
+msgid "The values will appear in the top bar. The first time, you may need to log out and back in."
+msgstr "数值将显示在顶栏中。首次使用可能需要注销后重新登录。"
+
+msgid "The volume rises little by little. «Got it» in the notification stops it."
+msgstr "音量会逐渐升高。点击通知中的“知道了”即可停止。"
+
+msgid "Theme"
+msgstr "主题"
+
+msgid "Thermal zone"
+msgstr "热区"
+
+msgid "They will stay active after restarting."
+msgstr "重启后仍会保持启用。"
+
+msgid "This computer does not expose physical sensors (this is normal in virtual machines)."
+msgstr "这台电脑没有提供物理传感器（在虚拟机中这是正常的）。"
+
+msgid "This computer is a laptop. Laptops rarely have motherboard sensors, and testing for them can freeze some models. Try anyway?"
+msgstr "这台电脑是笔记本。笔记本很少有主板传感器，检测可能导致某些机型死机。仍要尝试吗？"
+
+msgid "This is how an alarm will look and sound."
+msgstr "警报的样子和声音就是这样。"
+
+msgid "This is normal under load"
+msgstr "负载下属于正常"
+
+msgid "This is what I found on your computer:"
+msgstr "在你的电脑上找到了以下内容："
+
+msgid "This option is not available on this system."
+msgstr "此系统不提供该选项。"
+
+msgid "Too hot for the workload"
+msgstr "相对负载温度过高"
+
+msgid "Transparent; place it anywhere with the mouse"
+msgstr "透明；用鼠标放在任意位置"
+
+msgid "Try anyway"
+msgstr "仍然尝试"
+
+msgid "Turn it off to fit more values in less space."
+msgstr "关闭后可在更小的空间内放下更多数值。"
+
+msgid "Turn this off if your disks must never be woken up: without the disk service (UDisks2) the program cannot tell whether a disk is asleep."
+msgstr "如果你的硬盘绝对不能被唤醒，请关闭此项：没有磁盘服务（UDisks2），程序无法判断硬盘是否在休眠。"
+
+msgid "Two-tone alarm"
+msgstr "双音警报"
+
+msgid "Uninstall"
+msgstr "卸载"
+
+msgid "Uninstall %s?"
+msgstr "卸载 %s？"
+
+msgid "Uninstall %s…"
+msgstr "卸载 %s…"
+
+msgid "Unmute"
+msgstr "取消静音"
+
+msgid "Use recommended settings and finish"
+msgstr "使用推荐设置并完成"
+
+msgid "Use the limits recommended by your hardware."
+msgstr "使用你的硬件推荐的限值。"
+
+msgid "Values in the panel"
+msgstr "面板中的数值"
+
+msgid "Values shown in the panel"
+msgstr "面板中显示的数值个数"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Visual alarm (color and blinking)"
+msgstr "视觉警报（颜色和闪烁）"
+
+msgid "Wait before alarming (seconds)"
+msgstr "警报前等待（秒）"
+
+msgid "Waiting for data…"
+msgstr "正在等待数据…"
+
+msgid "Warn me if something gets too hot"
+msgstr "温度过高时提醒我"
+
+msgid "Warn when a fan stops"
+msgstr "风扇停转时提醒"
+
+msgid "Warn when it gets hot while almost idle"
+msgstr "几乎空闲却发热时提醒"
+
+msgid "Warn when the CPU or GPU slows down because of heat"
+msgstr "CPU 或显卡因过热降频时提醒"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Warning (it waits if you are busy)"
+msgstr "警告（忙碌时稍后提醒）"
+
+msgid "Warning sound"
+msgstr "警告声音"
+
+msgid "Warnings only show a notification; critical alarms also play the sound. During games or full-screen videos only critical alarms interrupt."
+msgstr "警告只显示通知；严重警报还会播放声音。玩游戏或全屏播放视频时，只有严重警报会打扰你。"
+
+msgid "Watch a hard disk every 2 minutes while it is warm"
+msgstr "机械硬盘温度偏高时每 2 分钟监视一次"
+
+msgid "Welcome"
+msgstr "欢迎"
+
+msgid "Welcome to %s"
+msgstr "欢迎使用 %s"
+
+msgid "What do you want to monitor, and where?"
+msgstr "要监视什么，在哪里显示？"
+
+msgid "When it"
+msgstr "当它"
+
+msgid "Where do you want to see your sensors?"
+msgstr "你想在哪里查看传感器？"
+
+msgid "Where to show the sensors"
+msgstr "传感器显示位置"
+
+msgid "While you were busy"
+msgstr "在你忙碌期间"
+
+msgid "Widget"
+msgstr "小部件"
+
+msgid "Window layout"
+msgstr "窗口布局"
+
+msgid "You can choose more than one. You can change this at any time."
+msgstr "可以多选，并可随时更改。"
+
+msgid "You have no alarms of your own yet."
+msgstr "你还没有自己的警报。"
+
+msgid "Your %(model)s is designed to work up to %(tj).0f%(unit)s under load. You will be warned if it goes beyond that, if it slows down because of heat or if it gets hot while doing almost nothing."
+msgstr "你的 %(model)s 设计为在负载下最高 %(tj).0f%(unit)s 工作。超过该温度、因过热降频或几乎空闲却发热时，都会提醒你。"
+
+msgid "Your %(model)s will raise an alarm at %(crit).0f%(unit)s."
+msgstr "%(model)s 将在 %(crit).0f%(unit)s 时报警。"
+
+msgid "Your desktop has transparency turned off; the widget will have a solid background. You can enable the compositor in your desktop settings."
+msgstr "你的桌面关闭了透明效果，小部件将使用不透明背景。你可以在桌面设置中启用合成器。"
+
+msgid "Your motherboard reserves its sensor chip for its own use, so it cannot be activated safely."
+msgstr "主板将传感器芯片保留为自用，因此无法安全启用。"
+
+msgid "Your sensors are being watched. You will only be warned when it matters."
+msgstr "传感器已在监控中。只在需要时提醒你。"
+
+msgid "above"
+msgstr "高于"
+
+msgid "advanced reading"
+msgstr "高级读数"
+
+msgid "alarms muted until %s"
+msgstr "警报已静音，至 %s"
+
+msgid "asleep"
+msgstr "休眠中"
+
+msgid "below"
+msgstr "低于"
+
+msgid "clock"
+msgstr "频率"
+
+msgid "collecting data…"
+msgstr "正在收集数据…"
+
+msgid "color"
+msgstr "颜色"
+
+msgid "control value with offset (not the real temperature)"
+msgstr "带偏移的控制值（不是实际温度）"
+
+msgid "critical"
+msgstr "危险"
+
+msgid "days back (default 1)"
+msgstr "向前追溯的天数（默认 1）"
+
+msgid "disk temperature can be enabled later (optional)"
+msgstr "可稍后启用磁盘温度（可选）"
+
+msgid "drops below"
+msgstr "低于"
+
+msgid "duplicate of the main sensor"
+msgstr "与主传感器重复"
+
+msgid "every %d h"
+msgstr "每 %d 小时"
+
+msgid "every %d min"
+msgstr "每 %d 分钟"
+
+msgid "every %d s"
+msgstr "每 %d 秒"
+
+msgid "every 10 min"
+msgstr "每 10 分钟"
+
+msgid "every 15 min"
+msgstr "每 15 分钟"
+
+msgid "every 2 hours"
+msgstr "每 2 小时"
+
+msgid "every 2 min (watch closely)"
+msgstr "每 2 分钟（密切监视）"
+
+msgid "every 30 min (let them rest)"
+msgstr "每 30 分钟（让其休息）"
+
+msgid "every 5 min"
+msgstr "每 5 分钟"
+
+msgid "every hour"
+msgstr "每小时"
+
+msgid "fan stopped"
+msgstr "风扇停转"
+
+msgid "fans"
+msgstr "风扇"
+
+msgid "generic firmware zone"
+msgstr "固件通用区域"
+
+msgid "goes above"
+msgstr "高于"
+
+msgid "hard disks"
+msgstr "硬盘"
+
+msgid "hidden by default"
+msgstr "默认隐藏"
+
+msgid "high"
+msgstr "偏高"
+
+msgid "hot while idle"
+msgstr "空闲时发热"
+
+msgid "min %s · max %s"
+msgstr "最小 %s · 最大 %s"
+
+msgid "motherboard"
+msgstr "主板"
+
+msgid "normal"
+msgstr "正常"
+
+msgid "not available"
+msgstr "不可用"
+
+msgid "notification"
+msgstr "通知"
+
+msgid "now"
+msgstr "现在"
+
+msgid "power"
+msgstr "功耗"
+
+msgid "read %s (you decide below)"
+msgstr "%s读取一次（在下方选择）"
+
+msgid "read %s: it does not affect its rest or its lifespan"
+msgstr "%s读取一次：不影响其休眠和寿命"
+
+msgid "sensor identifier (see “sensorpulse status --json”)"
+msgstr "传感器标识符（见“sensorpulse status --json”）"
+
+msgid "slowing down"
+msgstr "降频中"
+
+msgid "slowing down because of heat"
+msgstr "因过热降频"
+
+msgid "sound"
+msgstr "声音"
+
+msgid "temperature"
+msgstr "温度"
+
+msgid "the service is not available"
+msgstr "服务不可用"
+
+msgid "there is no sensor “%s”"
+msgstr "不存在传感器“%s”"
+
+msgid "usage"
+msgstr "使用率"
+
+msgid "warm: watched every 2 min until it cools down"
+msgstr "温度偏高：每 2 分钟监视一次，直到冷却"
+
+msgid "−%d days"
+msgstr "−%d 天"
+
+msgid "−%d h"
+msgstr "−%d 小时"
+
+msgid "−%d min"
+msgstr "−%d 分钟"

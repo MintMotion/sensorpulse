@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>SensorPulse</vendor>
+  <vendor_url>https://github.com/MintMotion/sensorpulse</vendor_url>
+  <icon_name>sensorpulse</icon_name>
+  <action id="io.github.mintmotion.SensorPulse.detect">
+    <description>Activate hardware sensors</description>
+    <description xml:lang="es">Activar sensores del equipo</description>
+    <description xml:lang="fr">Activer les capteurs du matériel</description>
+    <description xml:lang="it">Attivare i sensori dell'hardware</description>
+    <description xml:lang="de">Hardware-Sensoren aktivieren</description>
+    <description xml:lang="pt">Ativar os sensores do equipamento</description>
+    <description xml:lang="ja">ハードウェアセンサーを有効にする</description>
+    <description xml:lang="zh">启用硬件传感器</description>
+    <message>Authentication is required to activate the motherboard and disk temperature sensors</message>
+    <message xml:lang="es">Se necesita tu contraseña para activar los sensores de temperatura de la placa base y de los discos</message>
+    <message xml:lang="fr">Une authentification est nécessaire pour activer les capteurs de température de la carte mère et des disques</message>
+    <message xml:lang="it">È necessaria l'autenticazione per attivare i sensori di temperatura della scheda madre e dei dischi</message>
+    <message xml:lang="de">Zum Aktivieren der Temperatursensoren von Hauptplatine und Laufwerken ist eine Authentifizierung erforderlich</message>
+    <message xml:lang="pt">É necessária autenticação para ativar os sensores de temperatura da placa-mãe e dos discos</message>
+    <message xml:lang="ja">マザーボードとディスクの温度センサーを有効にするには認証が必要です</message>
+    <message xml:lang="zh">启用主板和磁盘温度传感器需要身份验证</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/sensorpulse/sensorpulse-detect</annotate>
+  </action>
+  <action id="io.github.mintmotion.SensorPulse.uninstall">
+    <description>Uninstall SensorPulse</description>
+    <description xml:lang="es">Desinstalar SensorPulse</description>
+    <description xml:lang="fr">Désinstaller SensorPulse</description>
+    <description xml:lang="it">Disinstallare SensorPulse</description>
+    <description xml:lang="de">SensorPulse deinstallieren</description>
+    <description xml:lang="pt">Desinstalar o SensorPulse</description>
+    <description xml:lang="ja">SensorPulse をアンインストール</description>
+    <description xml:lang="zh">卸载 SensorPulse</description>
+    <message>Authentication is required to uninstall SensorPulse</message>
+    <message xml:lang="es">Se necesita tu contraseña para desinstalar SensorPulse</message>
+    <message xml:lang="fr">Une authentification est nécessaire pour désinstaller SensorPulse</message>
+    <message xml:lang="it">È necessaria l'autenticazione per disinstallare SensorPulse</message>
+    <message xml:lang="de">Zum Deinstallieren von SensorPulse ist eine Authentifizierung erforderlich</message>
+    <message xml:lang="pt">É necessária autenticação para desinstalar o SensorPulse</message>
+    <message xml:lang="ja">SensorPulse をアンインストールするには認証が必要です</message>
+    <message xml:lang="zh">卸载 SensorPulse 需要身份验证</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/sensorpulse/sensorpulse-uninstall</annotate>
+  </action>
+</policyconfig>

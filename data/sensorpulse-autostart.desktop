@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=SensorPulse
+Comment=Sensor monitor in the background
+TryExec=sensorpulse
+Exec=sensorpulse --background
+Icon=sensorpulse
+Terminal=false
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=5

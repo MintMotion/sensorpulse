@@ -1,0 +1,63 @@
+.TH SENSORPULSE 1 "November 2026" "SensorPulse @VERSION@" "User Commands"
+.SH NAME
+sensorpulse \- sensor monitor with visual and sound alarms
+.SH SYNOPSIS
+.B sensorpulse
+[\fB\-\-background\fR | \fB\-\-window\fR | \fB\-\-settings\fR | \fB\-\-wizard\fR | \fB\-\-detail\fR \fIID\fR]
+.br
+.B sensorpulse status
+[\fB\-\-json\fR]
+.br
+.B sensorpulse report
+.br
+.B sensorpulse export
+\fIID\fR [\fB\-\-days\fR \fIN\fR] [\fB\-\-json\fR]
+.SH DESCRIPTION
+Shows CPU, GPU, disk, fan and battery sensors in the panel, in a window or floating on the
+desktop. Alarms know the design limit of the processor and warn when it slows down because
+of heat, when it gets hot while almost idle or when a fan stops. It only reads sensors and
+never needs root to run.
+.SH OPTIONS
+.TP
+.B \-\-background
+Start in the background (panel and floating widget only).
+.TP
+.B \-\-window
+Open the main window.
+.TP
+.B \-\-settings
+Open the settings.
+.TP
+.B \-\-wizard
+Run the welcome assistant again.
+.TP
+.BI \-\-detail " ID"
+Open the window on the detail of sensor \fIID\fR.
+.TP
+.BI \-\-rename " ID"
+Give sensor \fIID\fR a name of your own (used by the panel applet, the GNOME extension and the
+desktop widget).
+.SH COMMANDS
+.TP
+.B status
+Current values as text, or as JSON with \fB\-\-json\fR.
+.TP
+.B report
+Anonymous hardware report in Markdown (no computer name, user, serial numbers or addresses).
+.TP
+.B export
+History of one sensor as CSV, or JSON with \fB\-\-json\fR (default: last day).
+\fIN\fR must be greater than 0 (up to 3650). Exit status: 0 on success, 1 if the service is not
+available, 2 for invalid arguments, 3 if the sensor does not exist.
+.SH FILES
+.TP
+.I ~/.config/sensorpulse/config.json
+Settings. The last good copy is kept as \fIconfig.json.bak\fR; an unreadable file is kept as
+\fIconfig.json.corrupt\-DATE\fR and never overwritten.
+.TP
+.I ~/.local/state/sensorpulse/history.sqlite
+History (1-minute averages for 7 days, 10-minute averages for 30 days) and alarm log.
+.SH SEE ALSO
+.BR sensorpulse-service (1)
+.SH AUTHOR
+SensorPulse. MIT license.

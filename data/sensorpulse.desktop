@@ -1,0 +1,26 @@
+[Desktop Entry]
+Type=Application
+Name=SensorPulse
+GenericName=Sensor Monitor
+GenericName[es]=Monitor de sensores
+GenericName[fr]=Moniteur de capteurs
+GenericName[it]=Monitor dei sensori
+GenericName[de]=Sensorüberwachung
+GenericName[pt]=Monitor de sensores
+GenericName[ja]=センサーモニター
+GenericName[zh]=传感器监视器
+Comment=Temperatures, fans and alarms at a glance
+Comment[es]=Temperaturas, ventiladores y alarmas de un vistazo
+Comment[fr]=Températures, ventilateurs et alarmes en un coup d'œil
+Comment[it]=Temperature, ventole e allarmi a colpo d'occhio
+Comment[de]=Temperaturen, Lüfter und Alarme auf einen Blick
+Comment[pt]=Temperaturas, ventoinhas e alarmes num relance
+Comment[ja]=温度・ファン・アラームをひと目で
+Comment[zh]=温度、风扇和警报一目了然
+Exec=sensorpulse
+Icon=sensorpulse
+Terminal=false
+Categories=System;Monitor;GTK;
+Keywords=temperature;sensors;fan;cpu;gpu;monitor;temperatura;sensores;ventilador;ventola;Temperatur;Lüfter;ventoinha;
+StartupNotify=true
+StartupWMClass=sensorpulse

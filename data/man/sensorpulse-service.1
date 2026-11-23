@@ -1,0 +1,12 @@
+.TH SENSORPULSE-SERVICE 1 "November 2026" "SensorPulse @VERSION@" "User Commands"
+.SH NAME
+sensorpulse-service \- user service that reads the sensors for SensorPulse
+.SH SYNOPSIS
+.B sensorpulse-service
+.SH DESCRIPTION
+Reads the hardware sensors without root, evaluates the alarms, shows notifications, plays
+the alarm sounds and publishes the data on the session D-Bus as
+\fBio.github.mintmotion.SensorPulse\fR. It is started automatically by D-Bus activation or by
+the systemd user unit \fBsensorpulse.service\fR; it is not meant to be run by hand.
+.SH SEE ALSO
+.BR sensorpulse (1)

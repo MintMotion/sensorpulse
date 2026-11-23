@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+import sys
+sys.path.insert(0, "/usr/share/sensorpulse")
+if len(sys.argv) > 1 and sys.argv[1] in ("status", "report", "export"):
+    from sensorpulse.cli import main as cli
+    sys.exit(cli(sys.argv[1:]))
+from sensorpulse.app import main
+sys.exit(main())
