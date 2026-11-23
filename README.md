@@ -78,23 +78,52 @@ as temperatures rise and visual and sound alarms.
 - **Never controls fans or changes hardware settings**: read-only.
 - **Sends nothing to the internet.**
 
+![Choosing a style in the assistant](docs/captura-asistente-estilos.png)
+
 ## Install
 
 Download the `.deb` from [releases](https://github.com/MintMotion/sensorpulse/releases) and
 open it, or run:
 
 ```
-sudo apt install ./sensorpulse_0.3.0_all.deb
+sudo apt install ./sensorpulse_0.3.8_all.deb
 ```
 
-Then open it from the menu (or log in again): the welcome assistant appears.
+Then open it from the menu (or wait until the next login): the welcome assistant appears.
 
 **Requirements**: Debian 12+, Ubuntu 22.04+, Linux Mint 21 / LMDE 6+ (or derivatives),
 Python 3.8+ and GTK 3. Dependencies are installed automatically.
 
-On GNOME 45 or later the values are shown by the included extension (tested on GNOME 46; the
-first time you may need to log out and back in). On X11 the floating widget is a "dock" window
-below the others, so "Show desktop" does not hide it (tested on Muffin, xfwm4 and Marco).
+### Notes per desktop
+
+| Desktop | Panel | Floating |
+|---|---|---|
+| Cinnamon | its own applet (added to the panel automatically) | transparent window; on Wayland, its own desklet |
+| Xfce, MATE, Budgie, LXQt | icon with values | transparent window (with the compositor on) |
+| KDE Plasma | icon with values | transparent window (on Wayland, desktop layer) |
+| GNOME 45 or later | its own extension in the top bar | transparent window; on Wayland, normal window |
+| GNOME 44 or earlier | needs the "AppIndicator" extension | same as above |
+
+On X11 the floating widget is a "dock" window below the others, so "Show desktop" does not hide
+it (tested on Muffin, xfwm4 and Marco). The GNOME extension has been tested on GNOME 46; the
+first time you may need to log out and back in.
+
+## Data it reads
+
+| Component | From |
+|---|---|
+| Intel / AMD CPU | `coretemp`, `k10temp`, `k8temp`, `zenpower` (hwmon) |
+| AMD / Intel / nouveau graphics | hwmon from `amdgpu`, `radeon`, `i915`, `xe`, `nouveau` |
+| NVIDIA graphics (proprietary driver) | NVML (`libnvidia-ml.so.1`), only while the GPU is awake |
+| NVMe SSD | hwmon from the `nvme` driver |
+| SATA disks | `drivetemp` module ("Detect sensors" enables it) |
+| Motherboard and fans | `nct67xx`, `it87`, `asus-ec-sensors`, `thinkpad`, `dell-smm`, `applesmc`… |
+| Battery | `/sys/class/power_supply` |
+| No hwmon (ARM, Raspberry Pi) | kernel thermal zones |
+
+If a component does not appear, try **Settings › Sensors › Detect sensors**. If it still does
+not appear, it is usually because the kernel does not have its driver yet (very new hardware) or
+because the manufacturer does not publish the value for Linux.
 
 History is kept in `~/.local/state/sensorpulse/history.sqlite` (1-minute averages for 7 days,
 10-minute averages for 30 days), written once a minute.
@@ -102,11 +131,12 @@ History is kept in `~/.local/state/sensorpulse/history.sqlite` (1-minute average
 ## Development
 
 ```
-python3 -m sensorpulse.app
-python3 tests/test_core.py
+python3 -m sensorpulse.app                 # run from the source code
+python3 tests/test_core.py                 # core tests with simulated sensors
+python3 -m sensorpulse.cli status --json   # current values
 python3 tools/fake_sysfs.py /tmp/fake desktop
-SENSORPULSE_SYSROOT=/tmp/fake python3 -m sensorpulse.app
-packaging/build-deb.sh
+SENSORPULSE_SYSROOT=/tmp/fake python3 -m sensorpulse.app   # try it without the hardware
+packaging/build-deb.sh                     # build the .deb
 ```
 
 A user service (`sensorpulse-service`) reads the sensors, evaluates alarms and publishes the

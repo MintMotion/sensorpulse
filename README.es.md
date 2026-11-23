@@ -92,7 +92,7 @@ Descarga el `.deb` de la página de [versiones](https://github.com/MintMotion/se
 e instálalo con doble clic o con:
 
 ```
-sudo apt install ./sensorpulse_0.3.0_all.deb
+sudo apt install ./sensorpulse_0.3.8_all.deb
 ```
 
 Después ábrelo desde el menú (o espera al siguiente inicio de sesión): aparecerá el asistente.
